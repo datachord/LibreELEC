@@ -102,7 +102,7 @@ pre_configure_host() {
 post_make_host() {
   ninja ${NINJA_OPTS} llvm-config llvm-tblgen
 
-  if listcontains "${GRAPHIC_DRIVERS}" "iris"; then
+  if listcontains "${GRAPHIC_DRIVERS}" "(iris|panfrost)"; then
     ninja ${NINJA_OPTS} llvm-as llvm-link llvm-spirv opt
   fi
 }
