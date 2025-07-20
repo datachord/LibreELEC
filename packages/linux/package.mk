@@ -27,6 +27,7 @@ case "${LINUX}" in
     PKG_SHA256="efe2f6b14f4348c4930fdc1b2168fcdc7700034ba66393e860deb0f172a8083c"
     PKG_URL="https://github.com/raspberrypi/linux/archive/${PKG_VERSION}.tar.gz"
     PKG_SOURCE_NAME="linux-${LINUX}-${PKG_VERSION}.tar.gz"
+    PKG_PATCH_DIRS="raspberrypi rtlwifi/6.13 rtlwifi/6.14 rtlwifi/6.15"
     ;;
   *)
     PKG_VERSION="6.6.71"
