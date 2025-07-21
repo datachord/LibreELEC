@@ -1,7 +1,7 @@
 From bedd295922f7df955c45801720503eb632711525 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 26 Apr 2021 12:34:50 +0100
-Subject: [PATCH 001/186] Add pi configs and scripts
+Subject: [PATCH 001/205] Add pi configs and scripts
 
 ---
  pi-util/BUILD.txt                  |  59 ++++++++
@@ -1682,7 +1682,7 @@ index 000000000000..5935a11ca553
 From b6b137b1d039b42b15325f87f55cb7c38e2270b0 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 27 Apr 2021 11:27:39 +0100
-Subject: [PATCH 002/186] Add sand pix fmts & conversion fns
+Subject: [PATCH 002/205] Add sand pix fmts & conversion fns
 
 ---
  configure                     |   3 +
@@ -3503,7 +3503,7 @@ index 000000000000..634b55e800dc
 From c1b879de52690fb978f344b05cb213c34c35021f Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 27 Apr 2021 11:36:47 +0100
-Subject: [PATCH 003/186] Add aarch64 asm sand conv functions
+Subject: [PATCH 003/205] Add aarch64 asm sand conv functions
 
 Many thanks to eiler.mike@gmail.com (Michael Eiler) for these
 optimizations
@@ -4310,7 +4310,7 @@ index ed0261b02f07..1f543e935701 100644
 From c45ddc15e96adf8d90eb0c849d60499849213a12 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 27 Apr 2021 11:56:02 +0100
-Subject: [PATCH 004/186] Add raw encoding for sand
+Subject: [PATCH 004/205] Add raw encoding for sand
 
 ---
  libavcodec/raw.c    |  6 +++
@@ -4459,7 +4459,7 @@ index 8c577006d922..594a77c42a64 100644
 From 3e02e6190c567a58c8153ba2627f61677b58d6fb Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 27 Apr 2021 12:02:09 +0100
-Subject: [PATCH 005/186] Deal with the lack of trivial sand cropping
+Subject: [PATCH 005/205] Deal with the lack of trivial sand cropping
 
 ---
  fftools/ffmpeg.c        |  4 ++--
@@ -4559,7 +4559,7 @@ index 25802695493a..3a9d323325a9 100644
 From c7d8474ffa5689abf99367c43ec2d39a1957f564 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 27 Apr 2021 12:31:16 +0100
-Subject: [PATCH 006/186] Add an unsand filter
+Subject: [PATCH 006/205] Add an unsand filter
 
 ---
  configure                |   1 +
@@ -4857,7 +4857,7 @@ index 000000000000..7100f2fc9b1f
 From d154e34686db628b84d74d0808b080c1d1ce5c41 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 27 Apr 2021 12:37:07 +0100
-Subject: [PATCH 007/186] Reduce mmal compile warnings
+Subject: [PATCH 007/205] Reduce mmal compile warnings
 
 ---
  libavcodec/mmaldec.c | 4 ++++
@@ -4889,7 +4889,7 @@ index 3092f5851077..6f41b41ac4c0 100644
 From 1a7988f63e4137ebcc345470dcde20b62e71bdec Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 27 Apr 2021 17:56:16 +0100
-Subject: [PATCH 008/186] Add chroma location to hevc parse
+Subject: [PATCH 008/205] Add chroma location to hevc parse
 
 ---
  libavcodec/hevc_parser.c | 13 +++++++++++++
@@ -4948,7 +4948,7 @@ index 0e2844f47cef..88482fd5215b 100644
 From 8e5f8555b5908ca720c4ffd8b3a784d956883317 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 26 Sep 2022 18:20:50 +0100
-Subject: [PATCH 009/186] hwaccel: Add .abort_frame & use in hevcdec
+Subject: [PATCH 009/205] hwaccel: Add .abort_frame & use in hevcdec
 
 ---
  libavcodec/avcodec.h | 11 +++++++++++
@@ -5000,7 +5000,7 @@ index 88482fd5215b..4ee564f3e028 100644
 From f09419a30e1beae74ae167d8b33de4214cae6f0a Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 26 Sep 2022 18:26:17 +0100
-Subject: [PATCH 010/186] hwaccel: Add CAP_MT_SAFE for accels that can use
+Subject: [PATCH 010/205] hwaccel: Add CAP_MT_SAFE for accels that can use
  multi-thread
 
 ---
@@ -5049,7 +5049,7 @@ index d9d5afaa82d8..2cc89a41f55f 100644
 From 8142c4a1774c80ce059ddff3d6e4377803e3081d Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 27 Apr 2021 17:59:08 +0100
-Subject: [PATCH 011/186] Weak link utils
+Subject: [PATCH 011/205] Weak link utils
 
 ---
  libavcodec/weak_link.c | 102 +++++++++++++++++++++++++++++++++++++++++
@@ -5199,7 +5199,7 @@ index 000000000000..415b6a27a05c
 From 2610fffb3ca25f1a531876c80bf4c4b43c934386 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 27 Apr 2021 19:23:26 +0100
-Subject: [PATCH 012/186] Add v4l2_req V4L2 request H265 drm_prime decode
+Subject: [PATCH 012/205] Add v4l2_req V4L2 request H265 drm_prime decode
 
 Has the abiliy to switch between kernel API versions at runtime. This
 could be removed later once teher is no chance of usage on an old
@@ -10674,7 +10674,7 @@ index 000000000000..f14f594564d7
 From 43c7c3d42888304f2f5ca39739bf88baa3c1861e Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 27 Apr 2021 19:30:36 +0100
-Subject: [PATCH 013/186] Add no_cvt_hw option to ffmpeg
+Subject: [PATCH 013/205] Add no_cvt_hw option to ffmpeg
 
 ---
  fftools/ffmpeg.c     | 6 ++++--
@@ -10744,7 +10744,7 @@ index 055275d81394..761db365883b 100644
 From 0b46976bcb9c699235dd9a3ff6528c2dfcdba4ec Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 28 Apr 2021 10:16:39 +0100
-Subject: [PATCH 014/186] Add vout_drm
+Subject: [PATCH 014/205] Add vout_drm
 
 ---
  configure                |   4 +
@@ -11457,7 +11457,7 @@ index 000000000000..cfb33ce7c319
 From bfdfdd9ad94d8a9773c9069b930725ad44e9ddb3 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 28 Apr 2021 11:34:18 +0100
-Subject: [PATCH 015/186] Add vout_egl
+Subject: [PATCH 015/205] Add vout_egl
 
 ---
  configure                |   6 +
@@ -12357,7 +12357,7 @@ index 000000000000..7b9c610ace28
 From 55cc6b4be80730d1bbd67c483e97921f39b58965 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 28 Apr 2021 12:51:22 +0100
-Subject: [PATCH 016/186] V4L2 stateful rework
+Subject: [PATCH 016/205] V4L2 stateful rework
 
 ---
  libavcodec/Makefile       |   3 +-
@@ -14780,7 +14780,7 @@ index 4944d0851198..7f6033ac2c41 100644
 From 8a5fcd215d3ac07df4807d207e8a337edccffaeb Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 10 Jun 2021 18:46:21 +0100
-Subject: [PATCH 017/186] Fix crash in hw_device_default_name if type not found
+Subject: [PATCH 017/205] Fix crash in hw_device_default_name if type not found
  (NONE)
 
 ---
@@ -14804,7 +14804,7 @@ index 88fa7824701e..740a5e7153cf 100644
 From 35c7187e199e4042d30165c015f525bfcb377796 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 10 Jun 2021 18:59:18 +0100
-Subject: [PATCH 018/186] Allow v4l2m2m to select non-drm_prime output formats
+Subject: [PATCH 018/205] Allow v4l2m2m to select non-drm_prime output formats
 
 ---
  libavcodec/v4l2_buffers.c |  2 +-
@@ -14871,7 +14871,7 @@ index 7f6033ac2c41..a4b5a4e7e991 100644
 From d5bfb5014aa4692820903ef7287bc0319ebc139f Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 10 Jun 2021 18:59:38 +0100
-Subject: [PATCH 019/186] Fix YUV420P output from v4l2m2m
+Subject: [PATCH 019/205] Fix YUV420P output from v4l2m2m
 
 Also put get_width get_height inlines in header as they are generally
 useful.
@@ -14988,7 +14988,7 @@ index 24a9c9486468..8f054f2f50f9 100644
 From 43b65c3e3d1c8e2c35694764b7ee93e7dbf75a1a Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 10 Jun 2021 19:23:44 +0100
-Subject: [PATCH 020/186] Report buffer overflows in v4l2m2m
+Subject: [PATCH 020/205] Report buffer overflows in v4l2m2m
 
 ---
  libavcodec/v4l2_buffers.c | 14 ++++++++++----
@@ -15064,7 +15064,7 @@ index 6fe258662786..81aced0c2b5d 100644
 From b02c14a2e1f9890370eb9d459feccacb7e652e82 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 14 Jun 2021 11:55:16 +0100
-Subject: [PATCH 021/186] Increase V4L2 H264 stateful coded buffer size
+Subject: [PATCH 021/205] Increase V4L2 H264 stateful coded buffer size
 
 Try to set a min size of frame size / 2 for bitbuffers passed to V4l2.
 This fixes a few streams that have large I-frames.  You would hope
@@ -15188,7 +15188,7 @@ index a4b5a4e7e991..1851acbc93fe 100644
 From 1de32953e7f28a262ecb4727eaac0cfd3588379e Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 28 Jun 2021 12:13:35 +0100
-Subject: [PATCH 022/186] Fix raw video s.t. it respects any remaining cropping
+Subject: [PATCH 022/205] Fix raw video s.t. it respects any remaining cropping
 
 This fixes the long standing CONFWIN_A conformance test failure for drm.
 ---
@@ -15458,7 +15458,7 @@ index 7a9fdbd263d4..baf18920fa14 100644
 From 2214c119c420bb213917f1c6f85cb82d905772dc Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 13 Aug 2021 15:38:28 +0100
-Subject: [PATCH 023/186] Set frame interlace from V4L2 buffer field
+Subject: [PATCH 023/205] Set frame interlace from V4L2 buffer field
 
 ---
  libavcodec/v4l2_buffers.c | 12 ++++++++++++
@@ -15498,7 +15498,7 @@ index de31f7ced93c..97b8eb1db362 100644
 From b81ad61c52f3b35cd1b1b4f0ea715758c524522b Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 13 Aug 2021 16:11:53 +0100
-Subject: [PATCH 024/186] Fix V4L2 stateful to avoid crash if flush before
+Subject: [PATCH 024/205] Fix V4L2 stateful to avoid crash if flush before
  start
 
 ---
@@ -15524,7 +15524,7 @@ index a17ae027a666..eb901e8fabf6 100644
 From 2d975c0fbcb97b930b1e7164f439830ab2594d1d Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 9 Sep 2021 17:44:13 +0100
-Subject: [PATCH 025/186] Copy properties from frame to v4l2 buffer
+Subject: [PATCH 025/205] Copy properties from frame to v4l2 buffer
 
 Now copies all the properties in ff_v4l2_buffer_avframe_to_buf that
 ff_v4l2_buffer_buf_to_avframe copies
@@ -15695,7 +15695,7 @@ index 97b8eb1db362..126d2a17f4fe 100644
 From 29e4140983c9922f7375153d5ba515bb70b047be Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 17 Nov 2021 16:49:01 +0000
-Subject: [PATCH 026/186] ffmpeg: Do not inc DTS on no decode output
+Subject: [PATCH 026/205] ffmpeg: Do not inc DTS on no decode output
 
 V4L2 H264 decode has long latency and sometimes spits out a long stream
 of output without input. In this case incrementing DTS is wrong. There
@@ -15727,7 +15727,7 @@ index 719463016216..04bea4ef4fe9 100644
 From eebda1bffbbf81eb486665c73ace4a86303c1e69 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 17 Nov 2021 17:32:59 +0000
-Subject: [PATCH 027/186] v4l2_m2m_dec: Adjust timebase if H264
+Subject: [PATCH 027/205] v4l2_m2m_dec: Adjust timebase if H264
 
 Adjust AVCodecContext time_base if H264 in the same way that the
 software decoder does.
@@ -15760,7 +15760,7 @@ index 1851acbc93fe..aa1e5c159720 100644
 From 4e12f09479a88b648f17fad0e475fdb60ac93541 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 17 Nov 2021 17:38:27 +0000
-Subject: [PATCH 028/186] v4l2_m2m_dec: Produce best guess PTSs if none
+Subject: [PATCH 028/205] v4l2_m2m_dec: Produce best guess PTSs if none
  supplied
 
 Filter scheduling gets confused by missing PTSs and makes poor guesses
@@ -15895,7 +15895,7 @@ index aa1e5c159720..a5a2afbd273c 100644
 From 3a0fa83da24d5ec8739acf9f4cc713b7b1e49038 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 17 Nov 2021 17:59:27 +0000
-Subject: [PATCH 029/186] v4l2_m2m_dec: Try harder to get an initial frame
+Subject: [PATCH 029/205] v4l2_m2m_dec: Try harder to get an initial frame
 
 If the input Q is full then wait on a short timeout for a capture frame
 rather than stuffing yet still another frame into the input if we could
@@ -15936,7 +15936,7 @@ index a5a2afbd273c..b49f470c0a1e 100644
 From 33aa90c53d570527c8a8da70d6c805a5431d2f86 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 17 Nov 2021 18:04:56 +0000
-Subject: [PATCH 030/186] Add a V4L2 M2M deinterlace filter
+Subject: [PATCH 030/205] Add a V4L2 M2M deinterlace filter
 
 Add a V4L2 deinterlace filter that will accept DRMPRIME frames.
 
@@ -17277,7 +17277,7 @@ index 000000000000..1a933b7e0a5f
 From 1956533e4c9b3f45f9fcb83da6e04beec0e0b517 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 2 Dec 2021 17:49:55 +0000
-Subject: [PATCH 031/186] Put no_pts_rescale in context which makes more sense
+Subject: [PATCH 031/205] Put no_pts_rescale in context which makes more sense
  than an arg
 
 ---
@@ -17558,7 +17558,7 @@ index b49f470c0a1e..36754b314a4b 100644
 From fdcdb8519c90f3d2038244b21abf165f56224f08 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 8 Dec 2021 15:00:37 +0000
-Subject: [PATCH 032/186] Use bitbuf min size for all streams
+Subject: [PATCH 032/205] Use bitbuf min size for all streams
 
 ---
  libavcodec/v4l2_m2m_dec.c | 5 +----
@@ -17589,7 +17589,7 @@ index 36754b314a4b..48a6810d18b6 100644
 From 6703c26d1e71bcb7a077b07e8cbef015a1204da9 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 3 Dec 2021 12:54:18 +0000
-Subject: [PATCH 033/186] Track pending frames in v4l2 stateful
+Subject: [PATCH 033/205] Track pending frames in v4l2 stateful
 
 Track which frames are pending decode in the v4l2 stateful decoder.
 This relies on DTS & PTS having some relationship to reality, so
@@ -17847,7 +17847,7 @@ index 48a6810d18b6..d8ebb466cd56 100644
 From 74854095e6aac7647a2a04d53110150dd83f3b09 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 15 Dec 2021 17:58:21 +0000
-Subject: [PATCH 034/186] Use pending tracking to reduce v4l2 latency
+Subject: [PATCH 034/205] Use pending tracking to reduce v4l2 latency
 
 If there are more than 5 pending decodes outstanding then add a small
 timeout to the capture poll to reduce the rate at which frames are
@@ -17970,7 +17970,7 @@ index d8ebb466cd56..7e7e4729d08b 100644
 From 584445b9041ff6faed2a9a1ad455f0ab30bf04c6 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 15 Dec 2021 12:23:54 +0000
-Subject: [PATCH 035/186] Allow logger() to take const ctx
+Subject: [PATCH 035/205] Allow logger() to take const ctx
 
 ---
  libavcodec/v4l2_buffers.c | 2 +-
@@ -18015,7 +18015,7 @@ index 64540a37b32e..d3df48aed499 100644
 From 80ff275f1183fe466edbdfaadf17b2c40a45fa3e Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 15 Dec 2021 13:00:27 +0000
-Subject: [PATCH 036/186] Track numbere of bufs qed with an atomic
+Subject: [PATCH 036/205] Track numbere of bufs qed with an atomic
 
 Safer and faster than counting status
 ---
@@ -18089,7 +18089,7 @@ index 4cc164886c3b..a4176448d595 100644
 From c103328f28905a96632afece258c14cb726a7c48 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 9 Dec 2021 12:01:25 +0000
-Subject: [PATCH 037/186] Clear pkt_buf on flush
+Subject: [PATCH 037/205] Clear pkt_buf on flush
 
 ---
  libavcodec/v4l2_m2m_dec.c | 3 +++
@@ -18113,7 +18113,7 @@ index 7e7e4729d08b..09ec4963517b 100644
 From b7552e6e913b0b894106f735465742dbba915bba Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 15 Dec 2021 12:52:56 +0000
-Subject: [PATCH 038/186] Rework v4l2 buffer dequeue
+Subject: [PATCH 038/205] Rework v4l2 buffer dequeue
 
 ---
  libavcodec/v4l2_context.c | 543 ++++++++++++++++++--------------------
@@ -19150,7 +19150,7 @@ index 09ec4963517b..e4b6569ba5bd 100644
 From 935dad1739bafaa8bf8e24d9461207b71af0d617 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 9 Dec 2021 18:51:00 +0000
-Subject: [PATCH 039/186] Honor result of ff_get_format if possible
+Subject: [PATCH 039/205] Honor result of ff_get_format if possible
 
 ---
  libavcodec/v4l2_m2m_dec.c | 6 +++++-
@@ -19185,7 +19185,7 @@ index e4b6569ba5bd..c9655bcc3b43 100644
 From 18e485cf1252bba30cfd5feef626ad9d90fcde6a Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 14 Dec 2021 16:11:10 +0000
-Subject: [PATCH 040/186] Add an always-reinit quirk
+Subject: [PATCH 040/205] Add an always-reinit quirk
 
 ---
  libavcodec/v4l2_context.c |  7 +++++--
@@ -19291,7 +19291,7 @@ index c9655bcc3b43..e2b10f5e3ac3 100644
 From 9536a97e9a1119192cdb67b33799e68f39ce7630 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 4 Jan 2022 16:58:31 +0000
-Subject: [PATCH 041/186] v4l2_buffers: rework flags for keyframe
+Subject: [PATCH 041/205] v4l2_buffers: rework flags for keyframe
 
 Previously flags could become confused and keyframe info could be lost.
 This fixes that and removes the duplicate flags field in V4L2Buffer.
@@ -19400,7 +19400,7 @@ index c11b5e68637d..53b522d43e09 100644
 From a1280d98cefbf5ef7d92a51261ad3485e0a2ca74 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 22 Mar 2022 11:44:30 +0000
-Subject: [PATCH 042/186] v4l2m2m: Rework decode to wait for missing buffer,
+Subject: [PATCH 042/205] v4l2m2m: Rework decode to wait for missing buffer,
  add dynamic pending
 
 Previously receive_frame exited with EAGAIN if no capture buffer
@@ -19620,7 +19620,7 @@ index e2b10f5e3ac3..2e30449dfc1b 100644
 From b88b2c555f42688db681aab4d612c29d862246f7 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 25 Mar 2022 15:37:58 +0000
-Subject: [PATCH 043/186] v4l2_m2m2_dec: Avoid loop if unable to resize buffers
+Subject: [PATCH 043/205] v4l2_m2m2_dec: Avoid loop if unable to resize buffers
 
 If source change signals a buffer size that cannot be honored give up
 rather than looping indefinitely.  This happens on Pi if (say) a
@@ -19667,7 +19667,7 @@ index 7ddb7598109c..007a58c8f1db 100644
 From 0ec92a29d4cd4baa7820f20918d78cf117200a3b Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 25 Mar 2022 18:14:40 +0000
-Subject: [PATCH 044/186] v4l2dec: Improve size/format validation on init
+Subject: [PATCH 044/205] v4l2dec: Improve size/format validation on init
 
 ---
  libavcodec/v4l2_m2m_dec.c      | 84 ++++++++++++++++++++++++++++++++--
@@ -19809,7 +19809,7 @@ index b0a5930844a8..76ab0916cd6a 100644
 From 5d3752246afe17f69f896bfdee6faa61162c948a Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 13 Apr 2022 16:05:56 +0000
-Subject: [PATCH 045/186] v4l2 stateless hevc: Add another API variation for
+Subject: [PATCH 045/205] v4l2 stateless hevc: Add another API variation for
  linux 5.18
 
 This is probably going to be a short lived variation and may end up
@@ -20255,7 +20255,7 @@ index f14f594564d7..ed48d62e2d53 100644
 From a9773d356f79d719d96e2c59434647c0cb1295fd Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 3 May 2022 12:44:42 +0000
-Subject: [PATCH 046/186] Remove V4l2 frame size check for meson-vdec
+Subject: [PATCH 046/205] Remove V4l2 frame size check for meson-vdec
 
 ---
  libavcodec/v4l2_m2m.h     |  3 ++-
@@ -20315,7 +20315,7 @@ index 8dcadf461bb8..888ba67fea8c 100644
 From 2e80c1992c272b3b23d47e7afae817f45b0b2a88 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 23 May 2022 18:05:20 +0100
-Subject: [PATCH 047/186] v4l2m2m_dec: Make some error rturns a bit more robust
+Subject: [PATCH 047/205] v4l2m2m_dec: Make some error rturns a bit more robust
 
 ---
  libavcodec/v4l2_context.c |  5 ++---
@@ -20384,7 +20384,7 @@ index 888ba67fea8c..88a341aae2c2 100644
 From 1c9856de210cdf151f53ce249cb4781722adfb3d Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 24 May 2022 17:02:58 +0000
-Subject: [PATCH 048/186] v4l2m2m_dec: Support in-pkt AV_PKT_DATA_NEW_EXTRADATA
+Subject: [PATCH 048/205] v4l2m2m_dec: Support in-pkt AV_PKT_DATA_NEW_EXTRADATA
 
 Support packet side-data containing AV_PKT_DATA_NEW_EXTRADATA.  Should
 also detect and complain about unexpected streams of empty packets.
@@ -20494,7 +20494,7 @@ index 88a341aae2c2..392a68f0c7d2 100644
 From f128df5af073fb4cece2393c1fd0a19defb5675e Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 24 May 2022 20:02:48 +0000
-Subject: [PATCH 049/186] v4l2m2m_dec: Catch repeated Q fulls
+Subject: [PATCH 049/205] v4l2m2m_dec: Catch repeated Q fulls
 
 ---
  libavcodec/v4l2_m2m_dec.c | 8 +++++++-
@@ -20536,7 +20536,7 @@ index 392a68f0c7d2..7e170447064a 100644
 From 3997265fa559c38feaf4458625e3ec0e353e505b Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 25 May 2022 15:22:12 +0000
-Subject: [PATCH 050/186] Remove requirement for epoxy & libudev config options
+Subject: [PATCH 050/205] Remove requirement for epoxy & libudev config options
 
 ---
  configure              | 26 +++++++++++++++++---------
@@ -20663,7 +20663,7 @@ index 65576846e81f..37cea71756ae 100755
 From bcc9de26a54ab85a5f225706f6de36c885d7cb4c Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 27 May 2022 09:36:51 +0000
-Subject: [PATCH 051/186] hevc: If hwaccel avoid creation of s/w only vars
+Subject: [PATCH 051/205] hevc: If hwaccel avoid creation of s/w only vars
 
 ---
  libavcodec/hevc_refs.c | 35 +++++++++++++++++++++--------------
@@ -20801,7 +20801,7 @@ index e892436f9405..a2c29a611c5a 100644
 From af130585ebdfcda7ee01819b6869aa6eb6a0172d Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 30 May 2022 17:51:44 +0100
-Subject: [PATCH 052/186] rpi_sand: Add SAND30->NV12 conversion
+Subject: [PATCH 052/205] rpi_sand: Add SAND30->NV12 conversion
 
 C code only. Reworks the hwcontext_drm conversion to use the
 rpi_sand_fns generic frame convert fn rather than calling the
@@ -21023,7 +21023,7 @@ index 634b55e800dc..462ccb8abd18 100644
 From 474c3010278bb385614f536968681bd5043e81ae Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 1 Jun 2022 17:49:26 +0000
-Subject: [PATCH 053/186] rpi_sand: Add SAND30->NV12 asm for Armv7 & Armv8
+Subject: [PATCH 053/205] rpi_sand: Add SAND30->NV12 asm for Armv7 & Armv8
 
 Also reworks the previous Armv8 SAND30->Y16 function in a slightly more
 efficient way that makes it look more like the Armv7 version.
@@ -21962,7 +21962,7 @@ index 256c3d532f38..b6071e2928f7 100644
 From 76556eb5987c43cc46decc0d642ed7d762113613 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 7 Jun 2022 14:46:12 +0000
-Subject: [PATCH 054/186] v4l2_m2m_enc: Add the ability to encode DRM_PRIME
+Subject: [PATCH 054/205] v4l2_m2m_enc: Add the ability to encode DRM_PRIME
  frames
 
 ---
@@ -23337,7 +23337,7 @@ index 9a0837ecf3d7..05ff6ba72655 100644
 From e073991161bc9fc70a5ea3079d6b25c9d9008a4b Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 8 Jun 2022 16:13:31 +0000
-Subject: [PATCH 055/186] v4l2_m2m_dec: Use DTS for best effort PTS if PTS is
+Subject: [PATCH 055/205] v4l2_m2m_dec: Use DTS for best effort PTS if PTS is
  always NO_PTS
 
 If we do have DTS but don't have PTS then assume PTS=DTS.
@@ -23422,7 +23422,7 @@ index fbbfc81342d5..485a96f4b487 100644
 From 256637631cb246663c310d0bc8c3769b4af70692 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 30 Jun 2022 15:59:23 +0000
-Subject: [PATCH 056/186] v4l2: Update H265 request for current API
+Subject: [PATCH 056/205] v4l2: Update H265 request for current API
 
 This works with v9 of the H265 patch set which hopefully will be the
 last one. Hevc controls extracted from patched v4l2-controls into
@@ -24211,7 +24211,7 @@ index ed48d62e2d53..d4adb3f812a6 100644
 From d6457f1d161c7430750b1cc925e370314ba9b83c Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Sun, 3 Jul 2022 13:40:41 +0000
-Subject: [PATCH 057/186] v4l2_req: Observe limit on size of slice_array
+Subject: [PATCH 057/205] v4l2_req: Observe limit on size of slice_array
 
 This in fact provides some minor simplifications by combing the
 multi-slice and single-slice paths.
@@ -24342,7 +24342,7 @@ index d4adb3f812a6..0029e2330977 100644
 From d4794c95cd25fb87a3dcc7585eb7b057211a87dd Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 4 Jul 2022 14:43:20 +0100
-Subject: [PATCH 058/186] v4l2_req: Add entry point offsets array control
+Subject: [PATCH 058/205] v4l2_req: Add entry point offsets array control
 
 ---
  libavcodec/v4l2_req_hevc_vx.c  | 88 +++++++++++++++++++++++++++-------
@@ -24580,7 +24580,7 @@ index 0029e2330977..99c90064eab8 100644
 From b6e9c32d7a2cab41f9fbce46989173f32e2135d8 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 4 Jul 2022 16:22:54 +0100
-Subject: [PATCH 059/186] v4l2_req: Support Annex B
+Subject: [PATCH 059/205] v4l2_req: Support Annex B
 
 ---
  libavcodec/v4l2_req_hevc_vx.c | 61 +++++++++++++++++++++++------------
@@ -24694,7 +24694,7 @@ index 43ef6631edc1..5e0db9850aad 100644
 From ed654f6e2703c556582de06129a8052c95e1d934 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 4 Jul 2022 18:24:03 +0100
-Subject: [PATCH 060/186] v4l2_req: Add frame mode decode
+Subject: [PATCH 060/205] v4l2_req: Add frame mode decode
 
 ---
  libavcodec/v4l2_req_hevc_vx.c | 69 +++++++++++++++++++++++------------
@@ -24820,7 +24820,7 @@ index 5e0db9850aad..ada53d0d44df 100644
 From 765b4048cbe852cb857b64cab54afc2c4aed92cc Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 5 Jul 2022 12:54:22 +0000
-Subject: [PATCH 061/186] v4l2_req: Fix probe for frame based decode
+Subject: [PATCH 061/205] v4l2_req: Fix probe for frame based decode
 
 ---
  libavcodec/v4l2_req_hevc_vx.c | 33 +++++++++++++++++++++++----------
@@ -24903,7 +24903,7 @@ index ada53d0d44df..5d083016f89a 100644
 From 64b8c3987f022ed871ba9ed835de13e18c7e38ee Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 26 Jul 2022 15:46:14 +0000
-Subject: [PATCH 062/186] vf_deinterlace_v4l2m2m: Support NV12 through
+Subject: [PATCH 062/205] vf_deinterlace_v4l2m2m: Support NV12 through
  deinterlace
 
 Supports NV12 (though not yet NV12M) through deinterlace.
@@ -25229,7 +25229,7 @@ index 1a933b7e0a5f..1a3bef5bcba6 100644
 From b24e23b1a87bc51508e8fb2cf4ea31385059e150 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 19 Aug 2022 15:29:11 +0000
-Subject: [PATCH 063/186] v4l2_req: Enable use of MMAP for buffer alloc
+Subject: [PATCH 063/205] v4l2_req: Enable use of MMAP for buffer alloc
 
 Use MMAP rather than DMABUF if either the dmabuf device can't be opened
 or create_buf doesn't set the capability.
@@ -25961,7 +25961,7 @@ index cd79aad5631a..5cf17dd5e3fb 100644
 From 3087f58ab5abfac2a3d50359db08431a89d446df Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 22 Aug 2022 12:35:40 +0000
-Subject: [PATCH 064/186] Set buffer lengths on DQ
+Subject: [PATCH 064/205] Set buffer lengths on DQ
 
 ---
  libavcodec/v4l2_req_media.c | 8 ++++++++
@@ -25990,7 +25990,7 @@ index 910ac77bb6f9..1a9944774a48 100644
 From d761ce983b4738df798b02636433bfc342e387c1 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 22 Aug 2022 17:11:24 +0000
-Subject: [PATCH 065/186] Fix compile if videodev2.h defines V4L2 HEVC request
+Subject: [PATCH 065/205] Fix compile if videodev2.h defines V4L2 HEVC request
  API
 
 If videodev2.h does define the HEVC request API it is really hard to
@@ -26117,7 +26117,7 @@ index 5cf17dd5e3fb..614a1b4d99e4 100644
 From 8fff782ad6a053a67e3621ffaa06dfa6d6b6bba6 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 12 Sep 2022 17:59:22 +0100
-Subject: [PATCH 066/186] v4l2_m2m_enc: Send headers in in pkt side_data
+Subject: [PATCH 066/205] v4l2_m2m_enc: Send headers in in pkt side_data
 
 If GLOBAL_HEADERS are requested then we can't provide them at init time
 so send as NEW_EXTRADATA side data in a similar way to some AV1
@@ -26198,7 +26198,7 @@ index 05ff6ba72655..099ad23928d3 100644
 From 9d4bafaf9c0f149c2ad4b4b26d5c55a4c2deaaa0 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 14 Sep 2022 15:44:10 +0000
-Subject: [PATCH 067/186] matroskaenc: Allow H264 SPS/PPS headers in packet
+Subject: [PATCH 067/205] matroskaenc: Allow H264 SPS/PPS headers in packet
  sidedata
 
 ---
@@ -26267,7 +26267,7 @@ index 113541bd9a20..61e4c976ef76 100644
 From 969917342459c78f480f327ea682d8880357a2df Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 14 Sep 2022 15:55:15 +0000
-Subject: [PATCH 068/186] movenc: Allow H264 SPS/PPS headers in packet sidedata
+Subject: [PATCH 068/205] movenc: Allow H264 SPS/PPS headers in packet sidedata
 
 ---
  libavformat/movenc.c | 1 +
@@ -26289,7 +26289,7 @@ index c4fcb5f8b1b3..891adbf7b26c 100644
 From a78c7c1a9afc53f0ef71d251cb06789763babb26 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 26 Sep 2022 12:45:05 +0100
-Subject: [PATCH 069/186] Allow ffmpeg to select codec internal hwfmts if
+Subject: [PATCH 069/205] Allow ffmpeg to select codec internal hwfmts if
  no_cvt_hw
 
 This allows the selection of DRM_PRIME from v4l2m2m without forcing it
@@ -26326,7 +26326,7 @@ index 04bea4ef4fe9..0de534618323 100644
 From 72c4c2e860365d46301c688d8586b2f4f023ac8d Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 1 Sep 2022 11:42:41 +0000
-Subject: [PATCH 070/186] vf_deinterlace_v4l2m2m: Add a v4l2m2m scaler
+Subject: [PATCH 070/205] vf_deinterlace_v4l2m2m: Add a v4l2m2m scaler
 
 The logic for running an isp based scaler is pretty much identical to
 that for the deinterlacer so add to the deinterlacer. This requires
@@ -27809,7 +27809,7 @@ index 1a3bef5bcba6..2df39ec0f19f 100644
 From ce9d8c33e7d64ba11d1f1df4ee5340b63ab84c2f Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 22 Sep 2022 14:54:46 +0000
-Subject: [PATCH 071/186] v4l2_m2m: Adjust buffer allocation based on min/max
+Subject: [PATCH 071/205] v4l2_m2m: Adjust buffer allocation based on min/max
  controls
 
 Clip requested buffer count to min/max declared by driver.
@@ -27861,7 +27861,7 @@ index 6b97eab41ed7..ba36689ff3a6 100644
 From d67aed711e1ad85b3d4dfc3d363c0bdd3ac40001 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 22 Sep 2022 15:00:12 +0000
-Subject: [PATCH 072/186] v4l2_m2m_dec: If src Q is full then wait indefinitely
+Subject: [PATCH 072/205] v4l2_m2m_dec: If src Q is full then wait indefinitely
  for buffer
 
 If it is not possible to add another buffer to the src Q then alawys
@@ -27894,7 +27894,7 @@ index 485a96f4b487..bb183097f6f5 100644
 From 04ed865af7885364c4ae7d5e790a887c2c500275 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 22 Sep 2022 15:12:27 +0000
-Subject: [PATCH 073/186] vf_deinterlace_v4l2m2m: Add Q name to structure for
+Subject: [PATCH 073/205] vf_deinterlace_v4l2m2m: Add Q name to structure for
  debug
 
 ---
@@ -27928,7 +27928,7 @@ index 2df39ec0f19f..4edecc02bff5 100644
 From 8194a72e9599b4beacce6676e86b08028a4c979d Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 22 Sep 2022 16:08:42 +0000
-Subject: [PATCH 074/186] v4l2_m2m_enc: Set src buffer count to min+2 by
+Subject: [PATCH 074/205] v4l2_m2m_enc: Set src buffer count to min+2 by
  default
 
 Set output.num_buffers to 0 by default which will then be set to min+2
@@ -27960,7 +27960,7 @@ index 099ad23928d3..b8ba815c379d 100644
 From f949fe93ac776f6a2e9cec6c171a8c47c2b00c44 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 22 Sep 2022 16:13:57 +0000
-Subject: [PATCH 075/186] vf_deinterlace_m2m: For deinterlace set outlink FR to
+Subject: [PATCH 075/205] vf_deinterlace_m2m: For deinterlace set outlink FR to
  twice inlink
 
 We used to set the outlink framerate to unknown but it turns out that
@@ -27997,7 +27997,7 @@ index 4edecc02bff5..c52dae1c44a8 100644
 From e207d1dab82d5c1684cb87ed8c957d93b3913a4e Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 23 Sep 2022 11:30:56 +0000
-Subject: [PATCH 076/186] v4l2m2m: Add ff_v4l2_dq_all to drain all buffers from
+Subject: [PATCH 076/205] v4l2m2m: Add ff_v4l2_dq_all to drain all buffers from
  a Q
 
 Useful for where (encode) we might have drmprime buffers that we want to
@@ -28055,7 +28055,7 @@ index 21265f1bd77b..523c53e97dc5 100644
 From fb8f90688761ae011e9b4cca65a51e13416a498c Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 23 Sep 2022 11:38:36 +0000
-Subject: [PATCH 077/186] v4l2_m2m_enc: DQ output more frequently
+Subject: [PATCH 077/205] v4l2_m2m_enc: DQ output more frequently
 
 Ensure that we DQ any released src buffers on every op to avoid deadlock
 with source.
@@ -28114,7 +28114,7 @@ index b8ba815c379d..a992a3cccc68 100644
 From c90d17e99a8d66762c890bca316b6f52da2e6278 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 26 Sep 2022 18:20:00 +0100
-Subject: [PATCH 078/186] conf_native: Remove --enable-rpi from all builds
+Subject: [PATCH 078/205] conf_native: Remove --enable-rpi from all builds
 
 ---
  pi-util/conf_native.sh | 5 +++--
@@ -28148,7 +28148,7 @@ index 37cea71756ae..f22d531ca448 100755
 From 976ada8fe321b41bb2989b83b232b99d3c6720d1 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 29 Sep 2022 19:48:08 +0000
-Subject: [PATCH 079/186] v4l2_m2m_dec: Deal correctly with avcC H264 data in
+Subject: [PATCH 079/205] v4l2_m2m_dec: Deal correctly with avcC H264 data in
  extradata
 
 Decoders expect AnnexB style headers, mkv and similar formats have
@@ -28391,7 +28391,7 @@ index bb183097f6f5..6bd9926b3f31 100644
 From 4c7e2544e1bb6a5517ef45b9520cf1a50a2f04c3 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 30 Sep 2022 14:20:23 +0000
-Subject: [PATCH 080/186] v4l2_request_hevc: Fix up
+Subject: [PATCH 080/205] v4l2_request_hevc: Fix up
  V4L2_CID_CODEC_STATELESS_BASE if missing
 
 ---
@@ -28420,7 +28420,7 @@ index 7829d8208435..c02fdbe5a8e9 100644
 From af32492d37a1d898c05422ba405423ced65adbd7 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Sat, 1 Oct 2022 13:40:57 +0000
-Subject: [PATCH 081/186] vf_deinterlace_v4l2m2m: Fix compile on m/c without
+Subject: [PATCH 081/205] vf_deinterlace_v4l2m2m: Fix compile on m/c without
  V4L2 SAND
 
 ---
@@ -28554,7 +28554,7 @@ index c52dae1c44a8..716789f9881c 100644
 From d13ef67d14056374de1d66962e067633a5ca1e95 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Sun, 2 Oct 2022 12:36:43 +0000
-Subject: [PATCH 082/186] configure: Fix v4l2_req_hevc_vx setup; set after deps
+Subject: [PATCH 082/205] configure: Fix v4l2_req_hevc_vx setup; set after deps
  fixups
 
 ---
@@ -28592,7 +28592,7 @@ index 055944934476..c57b24bf8946 100755
 From ea9b52297f42fd55758be7944de7c5b24c77d900 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Sat, 1 Oct 2022 12:39:45 +0000
-Subject: [PATCH 083/186] vf_deinterlace_v4l2m2m: Ensure we get consistent
+Subject: [PATCH 083/205] vf_deinterlace_v4l2m2m: Ensure we get consistent
  final frames
 
 On getting EOS at the input of the filster do not simply drop everything
@@ -28944,7 +28944,7 @@ index 716789f9881c..ce875c2c619c 100644
 From 87f4f5cf8cadb5db52d474138e20dbcf53d865ed Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 5 Oct 2022 16:12:02 +0000
-Subject: [PATCH 084/186] v4l2_m2m_dec: Rework decode pending heuristic
+Subject: [PATCH 084/205] v4l2_m2m_dec: Rework decode pending heuristic
 
 The old code measured the length of the entire Q in the decoder and
 attempted to dynamically guess an appropriate length. This was prone to
@@ -29115,7 +29115,7 @@ index 6bd9926b3f31..bec9b22fcf3f 100644
 From a7bdc67135c3d0e69b0f8b58bb317194bbabe105 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 21 Oct 2022 13:48:07 +0000
-Subject: [PATCH 085/186] pthread_frame: Fix MT hwaccel. Recent change broke
+Subject: [PATCH 085/205] pthread_frame: Fix MT hwaccel. Recent change broke
  it.
 
 Revert the effects of 35aa7e70e7ec350319e7634a30d8d8aa1e6ecdda if the
@@ -29222,7 +29222,7 @@ index 2cc89a41f55f..b14f8e9360b5 100644
 From 9d2cf061d17a54ac854fb53574fa1006968cedeb Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 18 Oct 2022 13:18:27 +0000
-Subject: [PATCH 086/186] v4l2_req: Add swfmt to init logging
+Subject: [PATCH 086/205] v4l2_req: Add swfmt to init logging
 
 (cherry picked from commit dfa03b702baaf2952bcd2bbf8badcc2f9c961ddf)
 ---
@@ -29259,7 +29259,7 @@ index 614a1b4d99e4..767ecb036ad2 100644
 From c848f442ed183086c17ca83a9401f33e6b36ce80 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 18 Oct 2022 13:39:54 +0000
-Subject: [PATCH 087/186] v4l2_m2m: Avoid polling on a queue that is streamoff
+Subject: [PATCH 087/205] v4l2_m2m: Avoid polling on a queue that is streamoff
 
 (cherry picked from commit b2658bc56d3034a17db7f39597fc7d71bfe9a43b)
 ---
@@ -29304,7 +29304,7 @@ index 4a359bf45e30..b296dc111c1c 100644
 From 3e501d4ca4266ef8ffbf19808c42ccb3e40d6392 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 18 Oct 2022 14:07:04 +0000
-Subject: [PATCH 088/186] v4l2_m2m: Add function to get number of queued
+Subject: [PATCH 088/205] v4l2_m2m: Add function to get number of queued
  buffers
 
 (cherry picked from commit f9ac6485c00b4531dcff354222aef450b29728f4)
@@ -29336,7 +29336,7 @@ index 523c53e97dc5..8e4f68164351 100644
 From c0eac42165afdf7a7efad03bd140506263948940 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 18 Oct 2022 14:48:20 +0000
-Subject: [PATCH 089/186] v4l2_m2m: Add timeouts to dq_all and dequeue_packet
+Subject: [PATCH 089/205] v4l2_m2m: Add timeouts to dq_all and dequeue_packet
 
 Add timeouts and use them to have better flow control in encode
 
@@ -29505,7 +29505,7 @@ index a992a3cccc68..d0d27e5bc2f4 100644
 From f09618a055068582ebe7f6e704212b04f8d00bc7 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 18 Oct 2022 14:23:32 +0000
-Subject: [PATCH 090/186] v4l2_m2m_enc: Improve debug trace
+Subject: [PATCH 090/205] v4l2_m2m_enc: Improve debug trace
 
 (cherry picked from commit 113e89daffb329a0cd3d920abd483a4025664bf5)
 ---
@@ -29565,7 +29565,7 @@ index d0d27e5bc2f4..c8c2de3d4706 100644
 From 739483231401288794ff9e4acc253ef1129436cf Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 18 Oct 2022 13:22:36 +0000
-Subject: [PATCH 091/186] v4l2_m2m_enc: Copy dest packets to memory if short of
+Subject: [PATCH 091/205] v4l2_m2m_enc: Copy dest packets to memory if short of
  v4l2 buffers
 
 (cherry picked from commit aa4ebbda400b42db952fc713b26927fc8636b0e5)
@@ -29604,7 +29604,7 @@ index c8c2de3d4706..c23187e6e67a 100644
 From 680669b95cae532061fef61d972fb3c9c2b92d67 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 19 Oct 2022 11:00:16 +0000
-Subject: [PATCH 092/186] v4l2_m2m_dec: Fix pts_best_effort guessing for
+Subject: [PATCH 092/205] v4l2_m2m_dec: Fix pts_best_effort guessing for
  initial pts
 
 (cherry picked from commit 1af32e5c87586a0f7e76cdf19a012ddbcf3eac67)
@@ -29629,7 +29629,7 @@ index bec9b22fcf3f..47b2735f8252 100644
 From 3da063bb46e1d4ed5804d97230d74762076e1b13 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 19 Oct 2022 14:47:04 +0000
-Subject: [PATCH 093/186] v4l2_m2m_enc: Wait for frame or space in src Q in
+Subject: [PATCH 093/205] v4l2_m2m_enc: Wait for frame or space in src Q in
  rx_pkt
 
 If receive_packet we should ensure that there is space in the source Q
@@ -29691,7 +29691,7 @@ index c23187e6e67a..524e9424a5e8 100644
 From 90a2740b29653aaddb67b309899f50475b76c330 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 19 Oct 2022 14:54:29 +0000
-Subject: [PATCH 094/186] vf_deinterlace_v4l2m2m: Print dts rather that NOPTS
+Subject: [PATCH 094/205] vf_deinterlace_v4l2m2m: Print dts rather that NOPTS
  in trace
 
 (cherry picked from commit e9b468f35f0c6ad9bfe96f5a05e449afa8ae074a)
@@ -29718,7 +29718,7 @@ index ce875c2c619c..7c6751b69c65 100644
 From 56e2c1564e5288ad8642bb4e1954505586566765 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 19 Oct 2022 14:55:21 +0000
-Subject: [PATCH 095/186] vf_deinterlace_v4l2m2m: Ignore "wanted" when
+Subject: [PATCH 095/205] vf_deinterlace_v4l2m2m: Ignore "wanted" when
  processing input
 
 If we gate send a frame to the outlink on its frame_wanted flag then we
@@ -29751,7 +29751,7 @@ index 7c6751b69c65..a173a291f837 100644
 From ec50574d7b8ae1188e3d1f4f526e09a827485052 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 19 Oct 2022 15:00:43 +0000
-Subject: [PATCH 096/186] conf_native: Add --enable-gpl
+Subject: [PATCH 096/205] conf_native: Add --enable-gpl
 
 (cherry picked from commit bab9bf4a2e39391940d88af2ce5d70236ac21f15)
 ---
@@ -29774,7 +29774,7 @@ index f22d531ca448..082d9b58320e 100755
 From 491ca2cc58d75d0fe16ba6be000e92c47219e7f2 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 15 Nov 2022 13:33:00 +0000
-Subject: [PATCH 097/186] egl_vout: Make formatting consistent - no code
+Subject: [PATCH 097/205] egl_vout: Make formatting consistent - no code
  changes
 
 ---
@@ -30758,7 +30758,7 @@ index 7b9c610ace28..a52cabb082e9 100644
 From a132ef51a831edfa36f52ba699922fdb06acd1b0 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 12 Dec 2022 16:49:43 +0000
-Subject: [PATCH 098/186] v4l2m2m: reporganise get_raw_format for loop logic
+Subject: [PATCH 098/205] v4l2m2m: reporganise get_raw_format for loop logic
 
 ---
  libavcodec/v4l2_context.c | 16 +++++-----------
@@ -30806,7 +30806,7 @@ index 7031f3d3409d..79a31cf9300b 100644
 From 0189b1c3bb002b0385a419f4140371ea1ac4153c Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 12 Dec 2022 17:49:12 +0000
-Subject: [PATCH 099/186] drm_vout: Set zpos on the plane we pick to ensure it
+Subject: [PATCH 099/205] drm_vout: Set zpos on the plane we pick to ensure it
  is at the front
 
 ---
@@ -30876,7 +30876,7 @@ index cfb33ce7c319..9bd9e04421d7 100644
 From 386acb23dd6196fac68a39fa945a5b6b9c18c6a8 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 12 Dec 2022 17:51:46 +0000
-Subject: [PATCH 100/186] drm_vout: Only set modifier flag and pass modifiers
+Subject: [PATCH 100/205] drm_vout: Only set modifier flag and pass modifiers
  if there are some
 
 ---
@@ -30936,7 +30936,7 @@ index 9bd9e04421d7..a56adea86625 100644
 From 66cc08dbaec01e45af9c09a06829fcb2db58e30c Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 12 Dec 2022 17:52:58 +0000
-Subject: [PATCH 101/186] drm_vout: Fix typo in error message
+Subject: [PATCH 101/205] drm_vout: Fix typo in error message
 
 ---
  libavdevice/drm_vout.c | 2 +-
@@ -30959,7 +30959,7 @@ index a56adea86625..351abf1d60aa 100644
 From e11c24968da620816853eb0a7d33cb3e9488afb1 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 12 Dec 2022 18:00:41 +0000
-Subject: [PATCH 102/186] drm_vout: Add option to name the drm_module to use
+Subject: [PATCH 102/205] drm_vout: Add option to name the drm_module to use
 
 ---
  libavdevice/drm_vout.c | 8 +++++---
@@ -31012,7 +31012,7 @@ index 351abf1d60aa..491e1dc60861 100644
 From 397c9473723e936b86ff26fc5c0d5ba381874be3 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 13 Dec 2022 13:01:00 +0000
-Subject: [PATCH 103/186] dmabufs: Rework to allow for non-CMA backends
+Subject: [PATCH 103/205] dmabufs: Rework to allow for non-CMA backends
 
 ---
  libavcodec/v4l2_req_dmabufs.c | 161 ++++++++++++++++++++++++----------
@@ -31266,7 +31266,7 @@ index c4bbed18c680..1c3a5e861f0c 100644
 From c788ac962a1a4221d3fe9ab2b0d19ebf43964519 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 13 Dec 2022 13:07:58 +0000
-Subject: [PATCH 104/186] dmabufs: Use unref rather than deleet on cmabufs_ctl
+Subject: [PATCH 104/205] dmabufs: Use unref rather than deleet on cmabufs_ctl
 
 ---
  libavcodec/v4l2_req_dmabufs.c  | 12 +++++++++++-
@@ -31354,7 +31354,7 @@ index 767ecb036ad2..db7ed13b6d76 100644
 From 95d64bce0aaeb0f2e1b2bcd15e8345349efe295b Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 13 Dec 2022 14:21:40 +0000
-Subject: [PATCH 105/186] egl_vout: Remove redundant & completely broken debug
+Subject: [PATCH 105/205] egl_vout: Remove redundant & completely broken debug
 
 ---
  libavdevice/egl_vout.c | 25 -------------------------
@@ -31400,7 +31400,7 @@ index a52cabb082e9..afc7afd13ea0 100644
 From b79c28a0644c4d8b83c616dab6005ca862ec99df Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 13 Dec 2022 16:12:12 +0000
-Subject: [PATCH 106/186] v4l2m2m: Use offset from querybuf rather than always
+Subject: [PATCH 106/205] v4l2m2m: Use offset from querybuf rather than always
  0
 
 ---
@@ -31455,7 +31455,7 @@ index 1ac32c5989f1..d91d5d1dd07b 100644
 From 920d901527cbe17accc42659db548229318ac855 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 13 Dec 2022 17:57:27 +0000
-Subject: [PATCH 107/186] v4l2m2m: Fix crash if init errors out before setting
+Subject: [PATCH 107/205] v4l2m2m: Fix crash if init errors out before setting
  avctx
 
 ---
@@ -31479,7 +31479,7 @@ index 1e30d15fd866..ac6bae0dc327 100644
 From c339fbc23b3d0698e29301d7740cba39c9993fbc Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 13 Dec 2022 18:10:30 +0000
-Subject: [PATCH 108/186] v4l2_buffers: Add and use ctx_to_m2mctx + error debug
+Subject: [PATCH 108/205] v4l2_buffers: Add and use ctx_to_m2mctx + error debug
 
 ---
  libavcodec/v4l2_buffers.c | 22 +++++++++++++++-------
@@ -31546,7 +31546,7 @@ index 5ca58ea5935b..e28ef2d1e802 100644
 From 5959f5fb7ef1d1cab901393035e7a6ac31d0d78b Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 13 Dec 2022 18:53:22 +0000
-Subject: [PATCH 109/186] v4l2m2m: Add ability to use cma alloced dmabufs as
+Subject: [PATCH 109/205] v4l2m2m: Add ability to use cma alloced dmabufs as
  well as v4l2 mmap
 
 ---
@@ -31807,7 +31807,7 @@ index 47b2735f8252..4d170572980e 100644
 From 778d48c8652016879f09d7ac4aff7592f9ea9d13 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 13 Dec 2022 19:05:47 +0000
-Subject: [PATCH 110/186] testfilt: Skeleton of hw filter test code
+Subject: [PATCH 110/205] testfilt: Skeleton of hw filter test code
 
 ---
  pi-util/testfilt.py | 83 +++++++++++++++++++++++++++++++++++++++++++++
@@ -31907,7 +31907,7 @@ index 000000000000..b322dac0c22d
 From 2ac054adfa1e9ebece8a9594ac37b61ccff7e440 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 5 Jan 2023 14:39:30 +0000
-Subject: [PATCH 111/186] pixfmt: Add a #define to indicate presence of SAND
+Subject: [PATCH 111/205] pixfmt: Add a #define to indicate presence of SAND
  formats
 
 ---
@@ -31931,7 +31931,7 @@ index 22f70007c3df..5cc780e7d56c 100644
 From 426d93c7bd910d9222a5cbeb011ede5d9890dcbf Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 11 Jan 2023 16:30:37 +0000
-Subject: [PATCH 112/186] v4l2_m2m_dec: Fix initial pkt send if no extradata
+Subject: [PATCH 112/205] v4l2_m2m_dec: Fix initial pkt send if no extradata
 
 ---
  libavcodec/v4l2_m2m_dec.c | 4 ++--
@@ -31963,7 +31963,7 @@ index 4d170572980e..9daf05adfe74 100644
 From da6cd7985ffa515607e68116aa923fda23a40beb Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 16 Jan 2023 16:05:09 +0000
-Subject: [PATCH 113/186] v4l2m2m_dec: Make capture timeout long once pending
+Subject: [PATCH 113/205] v4l2m2m_dec: Make capture timeout long once pending
  count > 31
 
 For some applications (ffmpeg command line) the current heuristic of adding
@@ -32060,7 +32060,7 @@ index 9daf05adfe74..c8ab883d7ef2 100644
 From 58854764f365ac020b2d353f1db6b4d7ffa099a4 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 6 Feb 2023 19:23:16 +0000
-Subject: [PATCH 114/186] Initial buffersink alloc callback code
+Subject: [PATCH 114/205] Initial buffersink alloc callback code
 
 (cherry picked from commit dde8d3c8f3cc279b9b92ed4f10a2e3990f4aadeb)
 ---
@@ -32155,7 +32155,7 @@ index 64e08de53ee5..09737d322fb7 100644
 From d6e844180b9f50a33b837ec5cc897d5387edf2be Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 30 Jan 2023 17:23:12 +0000
-Subject: [PATCH 115/186] v4l2_m2m_dec: Add a profile check
+Subject: [PATCH 115/205] v4l2_m2m_dec: Add a profile check
 
 Check the profile in avctx aginst what the v4l2 driver advertises. If
 the driver doesn't support the check then just accept anything.
@@ -32312,7 +32312,7 @@ index c8ab883d7ef2..098adf4821eb 100644
 From d0992e458d9017cbb0383961b92589a015337aa3 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 1 Feb 2023 17:24:39 +0000
-Subject: [PATCH 116/186] v4l2_m2m_dec: Add extradata parse for h264 & hevc
+Subject: [PATCH 116/205] v4l2_m2m_dec: Add extradata parse for h264 & hevc
 
 If we have extradata we can extract profile & level and potentailly
 other useful info from it. Use the codec parser to get it if the decoder
@@ -32443,7 +32443,7 @@ index 098adf4821eb..e64bc707d3c6 100644
 From 7753c3a64821de5104f46068e9753d7ac86b8a5d Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 20 Mar 2023 18:12:51 +0000
-Subject: [PATCH 117/186] clean_usr_libs: Now wipes the include files too
+Subject: [PATCH 117/205] clean_usr_libs: Now wipes the include files too
 
 When swapping ffmpeg versions obsolete makefiles could confuse
 configure utilities.
@@ -32480,7 +32480,7 @@ index b3b2d5509de0..01bd6a6a2254 100755
 From 4116d51b48e57cfbe9a7986d38aa6818cb65bfbb Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 20 Mar 2023 18:15:08 +0000
-Subject: [PATCH 118/186] vulkan: Add missing decode extension defines
+Subject: [PATCH 118/205] vulkan: Add missing decode extension defines
 
 When building on bookworm the video decode extension names
 were missing. This adds them. I expect this patch will be
@@ -32512,7 +32512,7 @@ index ffd4f5dec4ec..d59f9409dd7c 100644
 From cebdcff3a25a64706c9a863e543260923c823237 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 21 Mar 2023 14:20:05 +0000
-Subject: [PATCH 119/186] v4l2_m2m_dec: Fix config file for finding if decoder
+Subject: [PATCH 119/205] v4l2_m2m_dec: Fix config file for finding if decoder
  enabled
 
 Fixes parsing of extradata for profile testing. 5.x changed where that
@@ -32538,7 +32538,7 @@ index e64bc707d3c6..91136f03da80 100644
 From d091812c90f3fc6bca97e6efbb1fd30ebc112043 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 21 Mar 2023 14:23:20 +0000
-Subject: [PATCH 120/186] v4l2_m2m_dec: Display profile given if skipped in
+Subject: [PATCH 120/205] v4l2_m2m_dec: Display profile given if skipped in
  debug
 
 ---
@@ -32562,7 +32562,7 @@ index 91136f03da80..d124c7b1fc43 100644
 From cbc083d57efdadef70b0b218cc252b24ed501596 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 22 Mar 2023 16:08:08 +0000
-Subject: [PATCH 121/186] conf_native: Fix for 64-bit kernel with 32-bit
+Subject: [PATCH 121/205] conf_native: Fix for 64-bit kernel with 32-bit
  userspace
 
 (cherry picked from commit 5bb1e09cea95b4215c6904b9b1a726e83bc5d327)
@@ -32618,7 +32618,7 @@ index 082d9b58320e..0a7d230f1b70 100755
 From 17d3d7a9750f8cb7954d0f396ea68eb408411c7e Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 20 Apr 2023 11:48:25 +0000
-Subject: [PATCH 122/186] conf_native: Add install prefix variation
+Subject: [PATCH 122/205] conf_native: Add install prefix variation
 
 (cherry picked from commit 73c3019b534cb8f4b4e4c21995653f6ce440086d)
 ---
@@ -32732,7 +32732,7 @@ index 0a7d230f1b70..f0ed1595948b 100755
 From 5c43e72236ef247a0a68e5ca9417496ee2e179a5 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 19 Apr 2023 10:47:58 +0000
-Subject: [PATCH 123/186] swcale: Add explicit bgr24->yv12 conversion
+Subject: [PATCH 123/205] swcale: Add explicit bgr24->yv12 conversion
 
 (cherry picked from commit 9a22d429f46a038321c66a0cd54737177641b434)
 ---
@@ -32890,7 +32890,7 @@ index 9af2e7ecc30d..9047030ae426 100644
 From 9161e42a5f914181fa97d86f20498632e9827556 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 20 Apr 2023 11:26:10 +0000
-Subject: [PATCH 124/186] swscale: Add unscaled XRGB->YUV420P functions
+Subject: [PATCH 124/205] swscale: Add unscaled XRGB->YUV420P functions
 
 (cherry picked from commit 04cc32ee3f390de513ad8c6156c0c66b2c60abc8)
 ---
@@ -33222,7 +33222,7 @@ index 9047030ae426..053c06adf5d1 100644
 From 2452146f774e85a1f0fe1c8c2551811cd98adc87 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 20 Apr 2023 11:35:44 +0000
-Subject: [PATCH 125/186] swscale: Add aarch64 unscaled RGB24->YUV420P
+Subject: [PATCH 125/205] swscale: Add aarch64 unscaled RGB24->YUV420P
 
 (cherry picked from commit 0cf416312095ce5bea3d2f7e9b14736d4b3ed160)
 ---
@@ -33480,7 +33480,7 @@ index d81110ec5714..8cf40b65f520 100644
 From 95900ef928a5254db60ce7182f4903ad6d27a181 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 27 Apr 2023 13:03:52 +0000
-Subject: [PATCH 126/186] rgb2rgb: Fix rgb24->yuv420p with arbitrary wxh
+Subject: [PATCH 126/205] rgb2rgb: Fix rgb24->yuv420p with arbitrary wxh
 
 (cherry picked from commit 58771fdf0218dc670d8a343824f540e2f6e8785d)
 ---
@@ -34010,7 +34010,7 @@ index 8cf40b65f520..978ab443ea52 100644
 From d33e534ad9a45463b0433767a28256d737827b8c Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 26 Apr 2023 15:36:07 +0000
-Subject: [PATCH 127/186] rgb2rgb: Use asm unconditionally
+Subject: [PATCH 127/205] rgb2rgb: Use asm unconditionally
 
 (cherry picked from commit 7c216c0804836b31c0ea093bb1dde5ab387724b1)
 ---
@@ -34074,7 +34074,7 @@ index f10c4ef2ded9..6a0e2dcc09f8 100644
 From 79640085d62275d96b2c53f18776cfd773d9fde4 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 27 Apr 2023 13:01:43 +0000
-Subject: [PATCH 128/186] tests/swscale: Add options for width and height on
+Subject: [PATCH 128/205] tests/swscale: Add options for width and height on
  the command line
 
 (cherry picked from commit eb8a09779688fc05bf204fdfcd063b04cda07271)
@@ -34233,7 +34233,7 @@ index 6c38041ddb81..4cf41d9f64a4 100644
 From 7fcd6aa72879fad5f0a4d2144b65c37c7a50ecfc Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 26 Apr 2023 16:31:23 +0000
-Subject: [PATCH 129/186] tests/swscale: Add a timing option
+Subject: [PATCH 129/205] tests/swscale: Add a timing option
 
 -t <n>   Where n is the number of time to loop the scale op.
          Often useful to do it 10 times or so for better resolution
@@ -34318,7 +34318,7 @@ index 4cf41d9f64a4..12776ffec7ae 100644
 From fabd4e3e197737f27684a17e817c186a350213d4 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 20 Apr 2023 13:40:36 +0000
-Subject: [PATCH 130/186] swscale: RGB->YUV420 fix C template to allow odd
+Subject: [PATCH 130/205] swscale: RGB->YUV420 fix C template to allow odd
  widths
 
 (cherry picked from commit 08b2023e7b5292df0adc6593e4d20087f9cef5c8)
@@ -34455,7 +34455,7 @@ index 053c06adf5d1..52469b2e4a7b 100644
 From 7d6f3a7ede0f4bf03a410bc2a8a8f38a47ac15a9 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 4 May 2023 14:26:14 +0000
-Subject: [PATCH 131/186] rtpenc: Add code to send H264 new extradata in
+Subject: [PATCH 131/205] rtpenc: Add code to send H264 new extradata in
  sidedata
 
 Fixes issue with pi V4L2 H264 encode which cannot create extradata
@@ -34508,7 +34508,7 @@ index a8d296a1542f..f67dc2a15ae1 100644
 From 7ba7eb37305530b4eef1637c87088da8d93911aa Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 5 Jun 2023 08:34:38 +0000
-Subject: [PATCH 132/186] rgb2rgb: Fix luma narrow+saturation instruction
+Subject: [PATCH 132/205] rgb2rgb: Fix luma narrow+saturation instruction
 
 (cherry picked from commit 9cdac1c08ad5c0aea28907d1d3fd0bdda387955a)
 ---
@@ -34579,7 +34579,7 @@ index 978ab443ea52..476ca723a0ef 100644
 From 0d553f498626e936ef1f48505ee260dbe2478d0c Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Sun, 4 Jun 2023 13:37:59 +0000
-Subject: [PATCH 133/186] v4l2_m2m_dec: Tweak pending count to use dts &
+Subject: [PATCH 133/205] v4l2_m2m_dec: Tweak pending count to use dts &
  reorder size
 
 (cherry picked from commit ca438b382c90f9a5f58f4708205e6ac25395db2a)
@@ -34744,7 +34744,7 @@ index d124c7b1fc43..13af62e819bc 100644
 From 244b56393e0f6f1d63b894d942d148c6dd9a3862 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 7 Jun 2023 11:14:52 +0000
-Subject: [PATCH 134/186] v4l2_m2m: Add encode size check
+Subject: [PATCH 134/205] v4l2_m2m: Add encode size check
 
 Previously an out of bounds size would fail whilst trying to copy the
 buffer with an unhelpful message. This produces a better error at init
@@ -34820,7 +34820,7 @@ index f802687b1bb2..28d9ed49887e 100644
 From 834a78de7eda652d34ad72ff6d63d4ba86d22fa3 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 9 Jun 2023 10:28:12 +0000
-Subject: [PATCH 135/186] vf_bwdif: Add attributes to ask for vectorization
+Subject: [PATCH 135/205] vf_bwdif: Add attributes to ask for vectorization
 
 (cherry picked from commit 281250290ba5c2dcd8676e9a261050e65c10bcb7)
 ---
@@ -34933,7 +34933,7 @@ index 65c617ebb335..09e68523bbfa 100644
 From b4f4f90c9bda485a07a894f2700aecad25ff1781 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 13 Jun 2023 13:07:55 +0000
-Subject: [PATCH 136/186] v4l2m2m_dec: Fix h264 reorder size if no sps
+Subject: [PATCH 136/205] v4l2m2m_dec: Fix h264 reorder size if no sps
  initially
 
 (cherry picked from commit 8832f7924bf47cbca0de251d7b406917f958ebf4)
@@ -34959,7 +34959,7 @@ index 13af62e819bc..11c83b2d6643 100644
 From f9124edee3874fc5ac9633f59248a9122f22e9a1 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 30 Jun 2023 18:03:29 +0000
-Subject: [PATCH 137/186] sand_fns: Add missing uxtw for neon stride
+Subject: [PATCH 137/205] sand_fns: Add missing uxtw for neon stride
 
 ---
  libavutil/aarch64/rpi_sand_neon.S | 2 ++
@@ -34989,7 +34989,7 @@ index 2f07d9674c9f..19411cf3f19a 100644
 From feed60f18216ea49b2ec7d54c71d342cb7c16c6e Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 30 Jun 2023 18:12:16 +0000
-Subject: [PATCH 138/186] sand_fns: Rework aarch64 neon
+Subject: [PATCH 138/205] sand_fns: Rework aarch64 neon
  sand30_lines_to_planar_c16
 
 Previous version could overflow its write buffer on small buffers
@@ -35359,7 +35359,7 @@ index 19411cf3f19a..af7e2a88c44b 100644
 From 7f8e8bb693607117f5f7bff2ee7ac7f841f3f726 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 30 Jun 2023 19:41:06 +0000
-Subject: [PATCH 139/186] sand_fns: Minor optimisations to aarch64 neon
+Subject: [PATCH 139/205] sand_fns: Minor optimisations to aarch64 neon
 
 ---
  libavutil/aarch64/rpi_sand_neon.S | 140 ++++++------------------------
@@ -35558,7 +35558,7 @@ index af7e2a88c44b..11658de0c8c2 100644
 From 700b43043a725509ef9cb6e1d51b28d1b96a6914 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Sat, 1 Jul 2023 18:43:32 +0000
-Subject: [PATCH 140/186] sand_fns: Add test for neon to sand30 fns so they can
+Subject: [PATCH 140/205] sand_fns: Add test for neon to sand30 fns so they can
  be tested by checkasm
 
 ---
@@ -35606,7 +35606,7 @@ index b6071e2928f7..0626bb06cb1b 100644
 From a0a5898d3d19aaa5324e5c64e526c6bb7f39f62b Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Sat, 1 Jul 2023 18:43:57 +0000
-Subject: [PATCH 141/186] checkasm: Add tests for rpi_sand sand30 fns
+Subject: [PATCH 141/205] checkasm: Add tests for rpi_sand sand30 fns
 
 Something of a kludge for function selection as, at the moment, the
 rpi_sand fns don't have a jump table that we could use for selection.
@@ -35800,7 +35800,7 @@ index a4e95541f56c..6fda6d227e13 100644
 From 3d9471725138933bc137fff7ed85d2fcc277f2af Mon Sep 17 00:00:00 2001
 From: James Darnley <jdarnley@obe.tv>
 Date: Mon, 20 Feb 2023 20:55:08 +0100
-Subject: [PATCH 142/186] avfilter/bwdif: move filter_line init to a dedicated
+Subject: [PATCH 142/205] avfilter/bwdif: move filter_line init to a dedicated
  function
 
 (cherry picked from commit b503b5a0cf80f38ecf4737c012b621b7e94f242a)
@@ -35876,7 +35876,7 @@ index e24e5cd9b1c5..ba7bc40c3d30 100644
 From be14915902bc8d4a9aff0776dc976a17f0a27215 Mon Sep 17 00:00:00 2001
 From: James Darnley <jdarnley@obe.tv>
 Date: Mon, 20 Feb 2023 20:55:08 +0100
-Subject: [PATCH 143/186] checkasm: add test for bwdif
+Subject: [PATCH 143/205] checkasm: add test for bwdif
 
 (cherry picked from commit 087faf8cac51e5e20a5f41b36b8d4c2705a10039)
 ---
@@ -36032,7 +36032,7 @@ index 6fda6d227e13..1620ab0be0fc 100644
 From 278fc0455e3c68e136022cf836777790d7c88c16 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 6 Jul 2023 13:56:18 +0000
-Subject: [PATCH 144/186] Revert "vf_bwdif: Add attributes to ask for
+Subject: [PATCH 144/205] Revert "vf_bwdif: Add attributes to ask for
  vectorization"
 
 This reverts commit 281250290ba5c2dcd8676e9a261050e65c10bcb7.
@@ -36147,7 +36147,7 @@ index 539fabbd4686..34e8c5e234ee 100644
 From 6c3566cf92cba9e2ccd87b53ac7f00f0ea431fb2 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 4 Jul 2023 14:04:39 +0000
-Subject: [PATCH 145/186] tests/checkasm: Add test for vf_bwdif filter_intra
+Subject: [PATCH 145/205] tests/checkasm: Add test for vf_bwdif filter_intra
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -36216,7 +36216,7 @@ index 46224bb57572..034bbabb4c5c 100644
 From 652e80de533059d24e136242324d4129a545a158 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 4 Jul 2023 14:04:40 +0000
-Subject: [PATCH 146/186] avfilter/vf_bwdif: Add neon for filter_intra
+Subject: [PATCH 146/205] avfilter/vf_bwdif: Add neon for filter_intra
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -36503,7 +36503,7 @@ index 34e8c5e234ee..6ec8bbab5d72 100644
 From 981053a48f80de6c0be0c3975f7aa877aacc842e Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 4 Jul 2023 14:04:41 +0000
-Subject: [PATCH 147/186] tests/checkasm: Add test for vf_bwdif filter_edge
+Subject: [PATCH 147/205] tests/checkasm: Add test for vf_bwdif filter_edge
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -36584,7 +36584,7 @@ index 034bbabb4c5c..5fdba09fdc73 100644
 From c48fed1cb66414179201cbac1ef6fb689cb4426a Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 4 Jul 2023 14:04:42 +0000
-Subject: [PATCH 148/186] avfilter/vf_bwdif: Add neon for filter_edge
+Subject: [PATCH 148/205] avfilter/vf_bwdif: Add neon for filter_edge
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -36884,7 +36884,7 @@ index 6ec8bbab5d72..688c2d257229 100644
 From eb72477591f765f10373e64dd57745ebe908d01a Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 4 Jul 2023 14:04:43 +0000
-Subject: [PATCH 149/186] avfilter/vf_bwdif: Add neon for filter_line
+Subject: [PATCH 149/205] avfilter/vf_bwdif: Add neon for filter_line
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -37201,7 +37201,7 @@ index 688c2d257229..2dc47f9614f8 100644
 From 88f7f8eb8b2fe1e006fdc05564259f6a2448fdbc Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 4 Jul 2023 14:04:44 +0000
-Subject: [PATCH 150/186] avfilter/vf_bwdif: Add a filter_line3 method for
+Subject: [PATCH 150/205] avfilter/vf_bwdif: Add a filter_line3 method for
  optimisation
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
@@ -37449,7 +37449,7 @@ index 5fdba09fdc73..3399cacdf790 100644
 From 27eb1719ee70a8ccaf2acac2161b84e283ac5b1f Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 4 Jul 2023 14:04:45 +0000
-Subject: [PATCH 151/186] avfilter/vf_bwdif: Add neon for filter_line3
+Subject: [PATCH 151/205] avfilter/vf_bwdif: Add neon for filter_line3
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -37794,7 +37794,7 @@ index f185e94e3c6f..ae9aab20cdd9 100644
 From 953a9d1e34140084185e747ebf3f3877b2779267 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 24 Jul 2023 16:39:06 +0100
-Subject: [PATCH 152/186] weak_link: Fix ref count init
+Subject: [PATCH 152/205] weak_link: Fix ref count init
 
 (cherry picked from commit d6de45b15a0c96bfdc96bbc441963a60945e5eba)
 ---
@@ -37817,7 +37817,7 @@ index f234a985b9c1..5a79e89ed7c2 100644
 From 8ffc0497c128a4d5f60849fe56e7f985e6a7ef71 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 24 Jul 2023 17:28:06 +0100
-Subject: [PATCH 153/186] v4l2_m2m: Check fd before attempting to close (fix
+Subject: [PATCH 153/205] v4l2_m2m: Check fd before attempting to close (fix
  valgrind warn)
 
 (cherry picked from commit befa42878d054d1fba53d5da14406faaae224daf)
@@ -37847,7 +37847,7 @@ index 28d9ed49887e..238ceea23546 100644
 From 567f293b764431685f83b368736b18cfdc42e29e Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 26 Jul 2023 16:29:39 +0000
-Subject: [PATCH 154/186] v4l2_req_devscan: Fix udev leak
+Subject: [PATCH 154/205] v4l2_req_devscan: Fix udev leak
 
 (cherry picked from commit 53b17ffd8a8890ef483163f3c9b0f96b437303f1)
 ---
@@ -37878,7 +37878,7 @@ index cfa94d55c49b..ee8527ba1f35 100644
 From 74a85ee6638b4fdedeaadd0d62c6f6c46345ecad Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 26 Jul 2023 16:42:27 +0000
-Subject: [PATCH 155/186] v4l2_m2m: Fix device_ref leak
+Subject: [PATCH 155/205] v4l2_m2m: Fix device_ref leak
 
 (cherry picked from commit bfea15c07b4301cd1208981c8f221e5e3a598b34)
 ---
@@ -37901,7 +37901,7 @@ index 238ceea23546..add64b8e63e6 100644
 From d018ca7bb4428e622e0acb5f3fa6b3ae6a52873e Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 28 Jul 2023 16:10:01 +0000
-Subject: [PATCH 156/186] v4l2_m2m_dec: Avoid structure init warnings when
+Subject: [PATCH 156/205] v4l2_m2m_dec: Avoid structure init warnings when
  struct changes
 
 (cherry picked from commit 8a836af420ed8c8dba90e2fd88691bcaa0668f8a)
@@ -37950,7 +37950,7 @@ index 11c83b2d6643..584e0b8825f9 100644
 From a466a89ac3c68a4bb41af63760caef0a624c86dd Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Sat, 22 Jul 2023 12:33:50 +0000
-Subject: [PATCH 157/186] v4l2_m2m_dec: Avoid calling get_format if no V4L2
+Subject: [PATCH 157/205] v4l2_m2m_dec: Avoid calling get_format if no V4L2
  decoder device
 
 Move the get_format callback to after the decoder device has been found.
@@ -38214,7 +38214,7 @@ index 584e0b8825f9..c4f38cc24e1f 100644
 From ff30fb1c60c9753eb42d107f083bdadea7918ebe Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 10 Aug 2023 06:26:35 +0000
-Subject: [PATCH 158/186] v4l2_req_dmabufs: Fix crash on free if dmabuf
+Subject: [PATCH 158/205] v4l2_req_dmabufs: Fix crash on free if dmabuf
  imported
 
 Thanks to Ratchanan Srirattanamet for finding this
@@ -38240,7 +38240,7 @@ index acc0366e7630..017c3892a593 100644
 From 7342db8c6a46af0ebe38369cb1cce6eacaeed528 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 10 Aug 2023 06:34:47 +0000
-Subject: [PATCH 159/186] aarch64/rgb2rgb_neon: Fix bgr24->yuv matrix read to
+Subject: [PATCH 159/205] aarch64/rgb2rgb_neon: Fix bgr24->yuv matrix read to
  flip correct way
 
 ---
@@ -38277,7 +38277,7 @@ index 476ca723a0ef..077d1dd5938a 100644
 From 2de40aab0aa4e2ee9be96b60efda8f5e99a4e445 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 10 Aug 2023 06:36:51 +0000
-Subject: [PATCH 160/186] aarch64/rgb2rgb_neon: Add macros to make common code
+Subject: [PATCH 160/205] aarch64/rgb2rgb_neon: Add macros to make common code
  explicit
 
 ---
@@ -38671,7 +38671,7 @@ index 077d1dd5938a..0956800b4185 100644
 From d711e7b9dde2ff557dc28f7456a6986db32ed52b Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 10 Aug 2023 08:11:21 +0000
-Subject: [PATCH 161/186] v4l2_req_media: Fix dmabuf fd leak in MMAP mode
+Subject: [PATCH 161/205] v4l2_req_media: Fix dmabuf fd leak in MMAP mode
 
 ---
  libavcodec/v4l2_req_media.c | 4 +++-
@@ -38697,7 +38697,7 @@ index 1a9944774a48..0394bb2b23f3 100644
 From 3b3a95a51be4c5187808b55d41d98c71a67b91f6 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 6 Sep 2023 14:36:41 +0100
-Subject: [PATCH 162/186] v4l2m2m_dec: Having calculated available pixfmt
+Subject: [PATCH 162/205] v4l2m2m_dec: Having calculated available pixfmt
  actually pass them to user
 
 ---
@@ -38729,7 +38729,7 @@ index c4f38cc24e1f..f67dd23ba1cc 100644
 From 1760b9854cda4fd94d19d2529a71134c69809b98 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 6 Sep 2023 14:45:16 +0100
-Subject: [PATCH 163/186] v4l2m2m: Simplify reinit - also fixes fmt selection
+Subject: [PATCH 163/205] v4l2m2m: Simplify reinit - also fixes fmt selection
 
 ---
  libavcodec/v4l2_context.c | 41 +++++++++++++++------------------------
@@ -38819,7 +38819,7 @@ index 978a487ca98d..ed126f8f2b35 100644
 From caf47c030e05c78d18db72d3ba979b933c0579e5 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 8 Sep 2023 12:13:38 +0000
-Subject: [PATCH 164/186] v4l2: Add (more) RGB formats to DRM & V4L2
+Subject: [PATCH 164/205] v4l2: Add (more) RGB formats to DRM & V4L2
 
 ---
  libavcodec/v4l2_buffers.c | 33 +++++++++++++++++++++++++++++++++
@@ -38893,7 +38893,7 @@ index 6df47e3f5a3c..c820a1d5227b 100644
 From 975422cbef7048a32ef0f8768a07a96d2d63a42d Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 24 Oct 2023 12:54:02 +0100
-Subject: [PATCH 165/186] dmabuf: Use vidbuf_cached for dmabuf allocation
+Subject: [PATCH 165/205] dmabuf: Use vidbuf_cached for dmabuf allocation
 
 Gates usage to kernel 6.1.57 and later as that is when the rpivid iommu
 patch was merged.
@@ -39126,7 +39126,7 @@ index db7ed13b6d76..5b37319d6aa9 100644
 From dd548f4cf1828f957b6d72021233813c49ac5c7c Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 11 Jan 2024 18:27:35 +0000
-Subject: [PATCH 166/186] v4l2_m2m_dec: Move drm_prime hwframecontext setup to
+Subject: [PATCH 166/205] v4l2_m2m_dec: Move drm_prime hwframecontext setup to
  after 1st frame
 
 (cherry picked from commit 2b9675fdbb3c99a08055366a3a9a216d1369ec9c)
@@ -39276,7 +39276,7 @@ index f4240f7dddb2..9f1c05a918ff 100644
 From 08c71f5f211216b2f9c5b5317682c639cf6c300f Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 12 Jan 2024 15:17:43 +0000
-Subject: [PATCH 167/186] vf_bwdif: Add capability to deinterlace NV12
+Subject: [PATCH 167/205] vf_bwdif: Add capability to deinterlace NV12
 
 As bwdif takes no account of horizontally adjacent pixels the same
 code can be used on planes that have multiple components as is used
@@ -39337,7 +39337,7 @@ index 9847d38b6a63..4d69b3039ddf 100644
 From 5b910aca795d4a352697fa749fce720a3643178d Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 12 Jan 2024 16:46:27 +0000
-Subject: [PATCH 168/186] v4l2_m2m_dec: Try to accomodate ffmpegs ideas about
+Subject: [PATCH 168/205] v4l2_m2m_dec: Try to accomodate ffmpegs ideas about
  default s/w fmts
 
 (cherry picked from commit c61de480d628ad60292f3695d7d29b9edd880be3)
@@ -39401,7 +39401,7 @@ index f67dd23ba1cc..38832230794d 100644
 From d140f93c6d1c54c6bb28ef31051c77e6a3ac8c78 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 18 Jan 2024 15:57:30 +0000
-Subject: [PATCH 169/186] v4l2_m2m_dec: Fix cma allocated s/w output
+Subject: [PATCH 169/205] v4l2_m2m_dec: Fix cma allocated s/w output
 
 (cherry picked from commit 87cefe4ddad7c36faad052e12268d7e05c5b694a)
 ---
@@ -39492,7 +39492,7 @@ index e412636a7a13..b3ef74bcd48c 100644
 From 79d7b3b96768de5d65cdee2b6cd2e91b827f0776 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 29 Jan 2024 15:12:34 +0000
-Subject: [PATCH 170/186] v4l2_req: Fix media pool delete race
+Subject: [PATCH 170/205] v4l2_req: Fix media pool delete race
 
 fds & polltasks associated with media fds that are still in flight are
 not freed on delete but the main pool is leading to use after free when
@@ -39601,7 +39601,7 @@ index 0394bb2b23f3..c94cc5b0f684 100644
 From 041844bf65a92134d2d4cb4036b6a31ce1bf2693 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 30 Jan 2024 14:24:59 +0000
-Subject: [PATCH 171/186] drm_vout: Fix connector etc. desc memory leak
+Subject: [PATCH 171/205] drm_vout: Fix connector etc. desc memory leak
 
 (cherry picked from commit 2f95ad366697901acb114a6d2a45810180f3652d)
 ---
@@ -39630,7 +39630,7 @@ index 491e1dc60861..275748abdcee 100644
 From 3300e10481d711b3a872cf0b9a13bd4009011b0b Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 30 Jan 2024 16:20:53 +0000
-Subject: [PATCH 172/186] conf_native: Add --tsan option
+Subject: [PATCH 172/205] conf_native: Add --tsan option
 
 (cherry picked from commit 3b5aa0d31bd420f8a642f6fc7919674b8a5d5b31)
 ---
@@ -39687,7 +39687,7 @@ index f0ed1595948b..0dbaa53e97e0 100755
 From 8f62193afd1823882eee4d7ce81b989dd881640c Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 30 Jan 2024 16:25:53 +0000
-Subject: [PATCH 173/186] v4l2_m2m: Rework use of ctx->lock to avoid use while
+Subject: [PATCH 173/205] v4l2_m2m: Rework use of ctx->lock to avoid use while
  uninit
 
 (cherry picked from commit 024508c338bd707f0a9d34cdf660984171da1a6a)
@@ -39852,7 +39852,7 @@ index a01a105892ab..0d61a432c3c8 100644
 From 76b95699abad71a942280db3b60c7f906b705166 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 1 Feb 2024 18:11:06 +0000
-Subject: [PATCH 174/186] matroskaenc: Fix H264 delayed extradata creation
+Subject: [PATCH 174/205] matroskaenc: Fix H264 delayed extradata creation
 
 (cherry picked from commit bd60b02509168625e12889068e3f0834148334ca)
 ---
@@ -39876,7 +39876,7 @@ index 61e4c976ef76..a6a00f03e7c9 100644
 From 83da9f5444e5c938bf623622d163c9559aa57cef Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Thu, 1 Feb 2024 18:12:38 +0000
-Subject: [PATCH 175/186] matroskaenc: Assume H264 is Annex B if no extradata
+Subject: [PATCH 175/205] matroskaenc: Assume H264 is Annex B if no extradata
 
 (cherry picked from commit 7d0cf1279dcf8e97d7dec7f2b7dcd0379b335e3d)
 ---
@@ -39909,7 +39909,7 @@ index a6a00f03e7c9..131ad31d1bda 100644
 From 02eec233a033b677709c641fe3f03a2a8714d750 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Fri, 16 Feb 2024 11:50:56 +0000
-Subject: [PATCH 176/186] aarch64/rgb2rgb: Change incorrect SXTX to stxw
+Subject: [PATCH 176/205] aarch64/rgb2rgb: Change incorrect SXTX to stxw
 
 (cherry picked from commit 4c362244e0f1c41d5af6c95a71da7b32029fa982)
 ---
@@ -39950,7 +39950,7 @@ index 0956800b4185..38f83a1b7878 100644
 From 1a20c50471f23cd6976c6606ab53be7ef5a9afb7 Mon Sep 17 00:00:00 2001
 From: James Le Cuirot <chewi@gentoo.org>
 Date: Sat, 17 Feb 2024 13:29:36 +0000
-Subject: [PATCH 177/186] aarch64/rpi_sand: Fix building under Clang/LLVM
+Subject: [PATCH 177/205] aarch64/rpi_sand: Fix building under Clang/LLVM
 
 The "Arm A64 Instruction Set Architecture" manual says that the MOV
 (element) instruction takes the form `MOV <Vd>.<Ts>[<index1>],
@@ -40080,7 +40080,7 @@ index 11658de0c8c2..3a6bc3de74e5 100644
 From 09fa999ad4ea877311216081bba5989c4b44349e Mon Sep 17 00:00:00 2001
 From: James Le Cuirot <chewi@gentoo.org>
 Date: Sat, 17 Feb 2024 14:37:44 +0000
-Subject: [PATCH 178/186] rtpenc: Fix building with GCC 14
+Subject: [PATCH 178/205] rtpenc: Fix building with GCC 14
 
 This incompatible pointer type issue became a fatal error in GCC 14. The
 AVBuffer API started using size_t in 5.0 with ef6a9e5e.
@@ -40107,7 +40107,7 @@ index f67dc2a15ae1..1f1e4cb25ad9 100644
 From 3bf2bc4d72a255aaec4b55bb5fd71258d8d16f67 Mon Sep 17 00:00:00 2001
 From: James Le Cuirot <chewi@gentoo.org>
 Date: Sun, 18 Feb 2024 09:18:31 +0000
-Subject: [PATCH 179/186] v4l2_req: Fix building against musl by including
+Subject: [PATCH 179/205] v4l2_req: Fix building against musl by including
  pthread.h
 
 (cherry picked from commit d4b70cc3ddd24036e0fd59ad562c6844767e314a)
@@ -40132,7 +40132,7 @@ index af7bbe1de462..27eafbc42b27 100644
 From f4af3f1cbbec0bc6fa355bdaf6dcaa01790640d3 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 27 Feb 2024 12:57:08 +0000
-Subject: [PATCH 180/186] v4l2_buffers: Fix init of drmprime source (OUTPUT)
+Subject: [PATCH 180/205] v4l2_buffers: Fix init of drmprime source (OUTPUT)
  buffers for encode
 
 Previous fix for mmaped dmabuf CAPTURE buffers broke this due to failure
@@ -40160,7 +40160,7 @@ index e844a1a0b67d..2d1db41a3017 100644
 From 88b5be9784c6f6088d050c09203804142b7b4316 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 9 Jan 2024 09:00:17 +0000
-Subject: [PATCH 181/186] ffconf: Add ability to output yuv files & run
+Subject: [PATCH 181/205] ffconf: Add ability to output yuv files & run
  valgrind as part of conform
 
 (cherry picked from commit 8104e3701b3766976670a1d4afb13704c66a9c94)
@@ -40294,7 +40294,7 @@ index 657568014e57..204e6257fb36 100755
 From 2a2e3858f09b446ee866c5e94c4d0cb81a176ad7 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 5 Mar 2024 15:47:34 +0000
-Subject: [PATCH 182/186] ffconf: Validate ffmpeg & test_root options rather
+Subject: [PATCH 182/205] ffconf: Validate ffmpeg & test_root options rather
  than crashing
 
 (cherry picked from commit c3948731965a10b3d459931f4134dd3d95b463aa)
@@ -40339,7 +40339,7 @@ index 204e6257fb36..71cd8387203f 100755
 From 3f92b3ddcf6647bb88b585bfa286a77c18b4ee30 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Wed, 6 Mar 2024 11:55:22 +0000
-Subject: [PATCH 183/186] ffconf: Fix expected conformance s.t.
+Subject: [PATCH 183/205] ffconf: Fix expected conformance s.t.
  VPSSPSPPS_A_MainConcept_1 fails
 
 (cherry picked from commit faa8c6afcda58e1ad91eacc4f4ca6b4d467200b3)
@@ -40364,7 +40364,7 @@ index 4efd5d1c676d..177f1c8111fd 100644
 From ad8c5df726d8623d2b8ce00fddb4312c3b871415 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 11 Mar 2024 18:36:51 +0000
-Subject: [PATCH 184/186] ffconf: Add loop option for race testing
+Subject: [PATCH 184/205] ffconf: Add loop option for race testing
 
 ---
  pi-util/ffconf.py | 11 ++++++++++-
@@ -40408,7 +40408,7 @@ index 71cd8387203f..702461200671 100755
 From f75376acc36b73deed90ae5f60b53355b9cef599 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Tue, 19 Mar 2024 15:29:02 +0000
-Subject: [PATCH 185/186] pi-util/ffperf: Make ffmpeg run options an option
+Subject: [PATCH 185/205] pi-util/ffperf: Make ffmpeg run options an option
 
 Also change the default run args to be a simple s/w decode
 ---
@@ -40484,7 +40484,7 @@ index 65c5224cd8fb..767efe2de2fa 100755
 From b87000d0dc80ec8e0cbd4406e62bd64b5519a544 Mon Sep 17 00:00:00 2001
 From: John Cox <jc@kynesim.co.uk>
 Date: Mon, 25 Mar 2024 18:25:47 +0000
-Subject: [PATCH 186/186] pi-util/ffconf: Fix --loop help text
+Subject: [PATCH 186/205] pi-util/ffconf: Fix --loop help text
 
 ---
  pi-util/ffconf.py | 2 +-
@@ -40503,3 +40503,1457 @@ index 702461200671..26091f3c07c2 100755
      args = argp.parse_args()
  
      if not os.path.isdir(args.test_root):
+
+From 03a2ad7af78e7896445e848fdc3666ee2ad9ceeb Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Thu, 21 Nov 2024 18:14:26 +0000
+Subject: [PATCH 187/205] pi-util/ffconf: Add a warning if hwaccel type isn't
+ found
+
+---
+ pi-util/ffconf.py | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+diff --git a/pi-util/ffconf.py b/pi-util/ffconf.py
+index 26091f3c07c2..391670fd446d 100755
+--- a/pi-util/ffconf.py
++++ b/pi-util/ffconf.py
+@@ -216,6 +216,7 @@ if __name__ == '__main__':
+     argp.add_argument("tests", nargs='*')
+     argp.add_argument("--pi4", action='store_true', help="Force pi4 cmd line")
+     argp.add_argument("--drm", action='store_true', help="Force v4l2 drm cmd line")
++    argp.add_argument("--sw", action='store_true', help="Use software decode")
+     argp.add_argument("--vaapi", action='store_true', help="Force vaapi cmd line")
+     argp.add_argument("--test_root", default="/opt/conform/h265.2016", help="Root dir for test")
+     argp.add_argument("--csvgen", action='store_true', help="Generate CSV file for dir")
+@@ -241,7 +242,7 @@ if __name__ == '__main__':
+     dectype = CODEC_HEVC_RPI
+     if os.path.exists("/dev/rpivid-hevcmem"):
+         dectype = HWACCEL_RPI
+-    if args.drm or os.path.exists("/sys/module/rpivid_hevc"):
++    if args.drm or os.path.exists("/sys/module/rpivid_hevc") or os.path.exists("/sys/module/rpi_hevc_dec"):
+         dectype = HWACCEL_DRM
+ 
+     if args.pi4:
+@@ -257,6 +258,11 @@ if __name__ == '__main__':
+         print("FFmpeg file '%s' not found" % args.ffmpeg)
+         exit(1)
+ 
++    if args.sw:
++        dectype = None
++    elif not dectype:
++        print("WARNING: no h/w decode slected - using software")
++
+     i = 0
+     while True:
+         i = i + 1
+
+From d789ddd1824750b3205454fca367431c0f072abf Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Thu, 14 Nov 2024 16:23:25 +0000
+Subject: [PATCH 188/205] sand: fix stride2 fns to cope with multiplanar sand
+ and std 1 planar
+
+---
+ libavcodec/rawenc.c      | 12 +++++------
+ libavutil/rpi_sand_fns.c | 22 +++++++++++---------
+ libavutil/rpi_sand_fns.h | 45 +++++++---------------------------------
+ 3 files changed, 26 insertions(+), 53 deletions(-)
+
+diff --git a/libavcodec/rawenc.c b/libavcodec/rawenc.c
+index 8ca0379e1219..b215577b7548 100644
+--- a/libavcodec/rawenc.c
++++ b/libavcodec/rawenc.c
+@@ -68,10 +68,10 @@ static int raw_sand8_as_yuv420(AVCodecContext *avctx, AVPacket *pkt,
+ 
+     dst = pkt->data;
+ 
+-    av_rpi_sand_to_planar_y8(dst, width, frame->data[0], frame->linesize[0], frame->linesize[3], x0, y0, width, height);
++    av_rpi_sand_to_planar_y8(dst, width, frame->data[0], frame->linesize[0], av_rpi_sand_frame_stride2_y(frame), x0, y0, width, height);
+     dst += width * height;
+     av_rpi_sand_to_planar_c8(dst, width / 2, dst + width * height / 4, width / 2,
+-                          frame->data[1], frame->linesize[1], av_rpi_sand_frame_stride2(frame), x0 / 2, y0 / 2, width / 2, height / 2);
++                          frame->data[1], frame->linesize[1], av_rpi_sand_frame_stride2_c(frame), x0 / 2, y0 / 2, width / 2, height / 2);
+     return 0;
+ }
+ 
+@@ -91,10 +91,10 @@ static int raw_sand16_as_yuv420(AVCodecContext *avctx, AVPacket *pkt,
+ 
+     dst = pkt->data;
+ 
+-    av_rpi_sand_to_planar_y16(dst, width * 2, frame->data[0], frame->linesize[0], frame->linesize[3], x0 * 2, y0, width * 2, height);
++    av_rpi_sand_to_planar_y16(dst, width * 2, frame->data[0], frame->linesize[0], av_rpi_sand_frame_stride2_y(frame), x0 * 2, y0, width * 2, height);
+     dst += width * height * 2;
+     av_rpi_sand_to_planar_c16(dst, width, dst + width * height / 2, width,
+-                          frame->data[1], frame->linesize[1], av_rpi_sand_frame_stride2(frame), x0, y0 / 2, width, height / 2);
++                          frame->data[1], frame->linesize[1], av_rpi_sand_frame_stride2_c(frame), x0, y0 / 2, width, height / 2);
+     return 0;
+ }
+ 
+@@ -114,10 +114,10 @@ static int raw_sand30_as_yuv420(AVCodecContext *avctx, AVPacket *pkt,
+ 
+     dst = pkt->data;
+ 
+-    av_rpi_sand30_to_planar_y16(dst, width * 2, frame->data[0], frame->linesize[0], frame->linesize[3], x0, y0, width, height);
++    av_rpi_sand30_to_planar_y16(dst, width * 2, frame->data[0], frame->linesize[0], av_rpi_sand_frame_stride2_y(frame), x0, y0, width, height);
+     dst += width * height * 2;
+     av_rpi_sand30_to_planar_c16(dst, width, dst + width * height / 2, width,
+-                          frame->data[1], frame->linesize[1], av_rpi_sand_frame_stride2(frame), x0/2, y0 / 2, width/2, height / 2);
++                          frame->data[1], frame->linesize[1], av_rpi_sand_frame_stride2_c(frame), x0/2, y0 / 2, width/2, height / 2);
+     return 0;
+ }
+ #endif
+diff --git a/libavutil/rpi_sand_fns.c b/libavutil/rpi_sand_fns.c
+index 0626bb06cb1b..f4bb680d032c 100644
+--- a/libavutil/rpi_sand_fns.c
++++ b/libavutil/rpi_sand_fns.c
+@@ -359,6 +359,8 @@ int av_rpi_sand_to_planar_frame(AVFrame * const dst, const AVFrame * const src)
+     const int h = av_frame_cropped_height(src);
+     const int x = src->crop_left;
+     const int y = src->crop_top;
++    const unsigned int stride2_y = av_rpi_sand_frame_stride2_y(src);
++    const unsigned int stride2_c = av_rpi_sand_frame_stride2_c(src);
+ 
+     // We will crop as part of the conversion
+     dst->crop_top = 0;
+@@ -373,22 +375,22 @@ int av_rpi_sand_to_planar_frame(AVFrame * const dst, const AVFrame * const src)
+                 case AV_PIX_FMT_YUV420P:
+                     av_rpi_sand_to_planar_y8(dst->data[0], dst->linesize[0],
+                                              src->data[0],
+-                                             av_rpi_sand_frame_stride1(src), av_rpi_sand_frame_stride2(src),
++                                             av_rpi_sand_frame_stride1(src), stride2_y,
+                                              x, y, w, h);
+                     av_rpi_sand_to_planar_c8(dst->data[1], dst->linesize[1],
+                                              dst->data[2], dst->linesize[2],
+                                              src->data[1],
+-                                             av_rpi_sand_frame_stride1(src), av_rpi_sand_frame_stride2(src),
++                                             av_rpi_sand_frame_stride1(src), stride2_c,
+                                              x/2, y/2,  w/2, h/2);
+                     break;
+                 case AV_PIX_FMT_NV12:
+                     av_rpi_sand_to_planar_y8(dst->data[0], dst->linesize[0],
+                                              src->data[0],
+-                                             av_rpi_sand_frame_stride1(src), av_rpi_sand_frame_stride2(src),
++                                             av_rpi_sand_frame_stride1(src), stride2_y,
+                                              x, y, w, h);
+                     av_rpi_sand_to_planar_y8(dst->data[1], dst->linesize[1],
+                                              src->data[1],
+-                                             av_rpi_sand_frame_stride1(src), av_rpi_sand_frame_stride2(src),
++                                             av_rpi_sand_frame_stride1(src), stride2_c,
+                                              x/2, y/2, w, h/2);
+                     break;
+                 default:
+@@ -400,12 +402,12 @@ int av_rpi_sand_to_planar_frame(AVFrame * const dst, const AVFrame * const src)
+                 case AV_PIX_FMT_YUV420P10:
+                     av_rpi_sand_to_planar_y16(dst->data[0], dst->linesize[0],
+                                              src->data[0],
+-                                             av_rpi_sand_frame_stride1(src), av_rpi_sand_frame_stride2(src),
++                                             av_rpi_sand_frame_stride1(src), stride2_y,
+                                              x*2, y, w*2, h);
+                     av_rpi_sand_to_planar_c16(dst->data[1], dst->linesize[1],
+                                              dst->data[2], dst->linesize[2],
+                                              src->data[1],
+-                                             av_rpi_sand_frame_stride1(src), av_rpi_sand_frame_stride2(src),
++                                             av_rpi_sand_frame_stride1(src), stride2_c,
+                                              x, y/2,  w, h/2);
+                     break;
+                 default:
+@@ -417,22 +419,22 @@ int av_rpi_sand_to_planar_frame(AVFrame * const dst, const AVFrame * const src)
+                 case AV_PIX_FMT_YUV420P10:
+                     av_rpi_sand30_to_planar_y16(dst->data[0], dst->linesize[0],
+                                              src->data[0],
+-                                             av_rpi_sand_frame_stride1(src), av_rpi_sand_frame_stride2(src),
++                                             av_rpi_sand_frame_stride1(src), stride2_y,
+                                              x, y, w, h);
+                     av_rpi_sand30_to_planar_c16(dst->data[1], dst->linesize[1],
+                                              dst->data[2], dst->linesize[2],
+                                              src->data[1],
+-                                             av_rpi_sand_frame_stride1(src), av_rpi_sand_frame_stride2(src),
++                                             av_rpi_sand_frame_stride1(src), stride2_c,
+                                              x/2, y/2, w/2, h/2);
+                     break;
+                 case AV_PIX_FMT_NV12:
+                     av_rpi_sand30_to_planar_y8(dst->data[0], dst->linesize[0],
+                                              src->data[0],
+-                                             av_rpi_sand_frame_stride1(src), av_rpi_sand_frame_stride2(src),
++                                             av_rpi_sand_frame_stride1(src), stride2_y,
+                                              x, y, w, h);
+                     av_rpi_sand30_to_planar_y8(dst->data[1], dst->linesize[1],
+                                              src->data[1],
+-                                             av_rpi_sand_frame_stride1(src), av_rpi_sand_frame_stride2(src),
++                                             av_rpi_sand_frame_stride1(src), stride2_c,
+                                              x/2, y/2, w, h/2);
+                     break;
+                 default:
+diff --git a/libavutil/rpi_sand_fns.h b/libavutil/rpi_sand_fns.h
+index 462ccb8abd18..be4fb0f60734 100644
+--- a/libavutil/rpi_sand_fns.h
++++ b/libavutil/rpi_sand_fns.h
+@@ -113,11 +113,17 @@ static inline unsigned int av_rpi_sand_frame_stride1(const AVFrame * const frame
+ #endif
+ }
+ 
+-static inline unsigned int av_rpi_sand_frame_stride2(const AVFrame * const frame)
++static inline unsigned int av_rpi_sand_frame_stride2_y(const AVFrame * const frame)
+ {
+-    return frame->linesize[3];
++    return frame->linesize[3] > 1 ? frame->linesize[3] :
++        frame->linesize[3] == 0 ? frame->height : frame->height * 3 / 2;
+ }
+ 
++static inline unsigned int av_rpi_sand_frame_stride2_c(const AVFrame * const frame)
++{
++    return frame->linesize[3] > 1 ? frame->linesize[3] :
++        frame->linesize[3] == 0 ? frame->height / 2 : frame->height * 3 / 2;
++}
+ 
+ static inline int av_rpi_is_sand_format(const int format)
+ {
+@@ -149,40 +155,5 @@ static inline int av_rpi_sand_frame_xshl(const AVFrame * const frame)
+     return av_rpi_is_sand8_frame(frame) ? 0 : 1;
+ }
+ 
+-// If x is measured in bytes (not pixels) then this works for sand64_16 as
+-// well as sand128 - but in the general case we work that out
+-
+-static inline unsigned int av_rpi_sand_frame_off_y(const AVFrame * const frame, const unsigned int x_y, const unsigned int y)
+-{
+-    const unsigned int stride1 = av_rpi_sand_frame_stride1(frame);
+-    const unsigned int stride2 = av_rpi_sand_frame_stride2(frame);
+-    const unsigned int x = x_y << av_rpi_sand_frame_xshl(frame);
+-    const unsigned int x1 = x & (stride1 - 1);
+-    const unsigned int x2 = x ^ x1;
+-
+-    return x1 + stride1 * y + stride2 * x2;
+-}
+-
+-static inline unsigned int av_rpi_sand_frame_off_c(const AVFrame * const frame, const unsigned int x_c, const unsigned int y_c)
+-{
+-    const unsigned int stride1 = av_rpi_sand_frame_stride1(frame);
+-    const unsigned int stride2 = av_rpi_sand_frame_stride2(frame);
+-    const unsigned int x = x_c << (av_rpi_sand_frame_xshl(frame) + 1);
+-    const unsigned int x1 = x & (stride1 - 1);
+-    const unsigned int x2 = x ^ x1;
+-
+-    return x1 + stride1 * y_c + stride2 * x2;
+-}
+-
+-static inline uint8_t * av_rpi_sand_frame_pos_y(const AVFrame * const frame, const unsigned int x, const unsigned int y)
+-{
+-    return frame->data[0] + av_rpi_sand_frame_off_y(frame, x, y);
+-}
+-
+-static inline uint8_t * av_rpi_sand_frame_pos_c(const AVFrame * const frame, const unsigned int x, const unsigned int y)
+-{
+-    return frame->data[1] + av_rpi_sand_frame_off_c(frame, x, y);
+-}
+-
+ #endif
+ 
+
+From 188d5a56b52176272c0dd4ef1e01f93c774774f8 Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Thu, 14 Nov 2024 16:24:10 +0000
+Subject: [PATCH 189/205] v4l2_request: Add sand muliplanar
+
+---
+ libavcodec/v4l2_req_hevc_vx.c  | 43 +++++++++++++++++++++++-----------
+ libavcodec/v4l2_request_hevc.c |  4 +++-
+ libavcodec/v4l2_request_hevc.h |  7 ++++++
+ 3 files changed, 39 insertions(+), 15 deletions(-)
+
+diff --git a/libavcodec/v4l2_req_hevc_vx.c b/libavcodec/v4l2_req_hevc_vx.c
+index e1bd5c6a1f09..4e19976270e8 100644
+--- a/libavcodec/v4l2_req_hevc_vx.c
++++ b/libavcodec/v4l2_req_hevc_vx.c
+@@ -112,8 +112,10 @@ static enum AVPixelFormat pixel_format_from_format(const struct v4l2_format *con
+         return AV_PIX_FMT_NV12;
+ #if CONFIG_SAND
+     case V4L2_PIX_FMT_NV12_COL128:
++    case V4L2_PIX_FMT_NV12_COL128M:
+         return AV_PIX_FMT_RPI4_8;
+     case V4L2_PIX_FMT_NV12_10_COL128:
++    case V4L2_PIX_FMT_NV12_10_COL128M:
+         return AV_PIX_FMT_RPI4_10;
+ #endif
+     default:
+@@ -709,6 +711,8 @@ static int drm_from_format(AVDRMFrameDescriptor * const desc, const struct v4l2_
+     unsigned int height;
+     unsigned int bpl;
+     uint32_t pixelformat;
++    uint64_t mod = DRM_FORMAT_MOD_LINEAR;
++    unsigned int object_count = 1;
+ 
+     if (V4L2_TYPE_IS_MULTIPLANAR(format->type)) {
+         width       = format->fmt.pix_mp.width;
+@@ -726,47 +730,56 @@ static int drm_from_format(AVDRMFrameDescriptor * const desc, const struct v4l2_
+     switch (pixelformat) {
+     case V4L2_PIX_FMT_NV12:
+         layer->format = DRM_FORMAT_NV12;
+-        desc->objects[0].format_modifier = DRM_FORMAT_MOD_LINEAR;
+         break;
+ #if CONFIG_SAND
+     case V4L2_PIX_FMT_NV12_COL128:
+         layer->format = DRM_FORMAT_NV12;
+-        desc->objects[0].format_modifier = DRM_FORMAT_MOD_BROADCOM_SAND128_COL_HEIGHT(bpl);
++        mod = DRM_FORMAT_MOD_BROADCOM_SAND128_COL_HEIGHT(bpl);
+         break;
+     case V4L2_PIX_FMT_NV12_10_COL128:
+         layer->format = DRM_FORMAT_P030;
+-        desc->objects[0].format_modifier = DRM_FORMAT_MOD_BROADCOM_SAND128_COL_HEIGHT(bpl);
++        mod = DRM_FORMAT_MOD_BROADCOM_SAND128_COL_HEIGHT(bpl);
++        break;
++    case V4L2_PIX_FMT_NV12_COL128M:
++        layer->format = DRM_FORMAT_NV12;
++        mod = DRM_FORMAT_MOD_BROADCOM_SAND128_COL_HEIGHT(0);
++        object_count = 2;
++        break;
++    case V4L2_PIX_FMT_NV12_10_COL128M:
++        layer->format = DRM_FORMAT_P030;
++        mod = DRM_FORMAT_MOD_BROADCOM_SAND128_COL_HEIGHT(0);
++        object_count = 2;
+         break;
+ #endif
+ #ifdef DRM_FORMAT_MOD_ALLWINNER_TILED
+     case V4L2_PIX_FMT_SUNXI_TILED_NV12:
+         layer->format = DRM_FORMAT_NV12;
+-        desc->objects[0].format_modifier = DRM_FORMAT_MOD_ALLWINNER_TILED;
++        mod = DRM_FORMAT_MOD_ALLWINNER_TILED;
+         break;
+ #endif
+ #if defined(V4L2_PIX_FMT_NV15) && defined(DRM_FORMAT_NV15)
+     case V4L2_PIX_FMT_NV15:
+         layer->format = DRM_FORMAT_NV15;
+-        desc->objects[0].format_modifier = DRM_FORMAT_MOD_LINEAR;
+         break;
+ #endif
+     case V4L2_PIX_FMT_NV16:
+         layer->format = DRM_FORMAT_NV16;
+-        desc->objects[0].format_modifier = DRM_FORMAT_MOD_LINEAR;
+         break;
+ #if defined(V4L2_PIX_FMT_NV20) && defined(DRM_FORMAT_NV20)
+     case V4L2_PIX_FMT_NV20:
+         layer->format = DRM_FORMAT_NV20;
+-        desc->objects[0].format_modifier = DRM_FORMAT_MOD_LINEAR;
+         break;
+ #endif
+     default:
+         return -1;
+     }
+ 
+-    desc->nb_objects = 1;
+-    desc->objects[0].fd = -1;
+-    desc->objects[0].size = 0;
++    desc->nb_objects = object_count;
++    for (unsigned int i = 0; i != AV_DRM_MAX_PLANES; ++i) {
++        desc->objects[i].fd = -1;
++        desc->objects[i].size = 0;
++        desc->objects[i].format_modifier = (i >= object_count) ? DRM_FORMAT_MOD_INVALID : mod;
++    }
+ 
+     desc->nb_layers = 1;
+     layer->nb_planes = 2;
+@@ -790,8 +803,8 @@ static int drm_from_format(AVDRMFrameDescriptor * const desc, const struct v4l2_
+     else
+ #endif
+     {
+-        layer->planes[1].object_index = 0;
+-        layer->planes[1].offset = layer->planes[0].pitch * height;
++        layer->planes[1].object_index = (object_count > 1) ? 1 : 0;
++        layer->planes[1].offset = (object_count > 1) ? 0 : layer->planes[0].pitch * height;
+         layer->planes[1].pitch = layer->planes[0].pitch;
+     }
+ 
+@@ -1066,8 +1079,10 @@ static int v4l2_request_hevc_end_frame(AVCodecContext *avctx)
+ 
+     // Set the drm_prime desriptor
+     drm_from_format(&rd->drm, mediabufs_dst_fmt(ctx->mbufs));
+-    rd->drm.objects[0].fd = dmabuf_fd(qent_dst_dmabuf(rd->qe_dst, 0));
+-    rd->drm.objects[0].size = dmabuf_size(qent_dst_dmabuf(rd->qe_dst, 0));
++    for (i = 0; i != rd->drm.nb_objects; ++i) {
++        rd->drm.objects[i].fd = dmabuf_fd(qent_dst_dmabuf(rd->qe_dst, i));
++        rd->drm.objects[i].size = dmabuf_size(qent_dst_dmabuf(rd->qe_dst, i));
++    }
+ 
+     decode_q_remove(&ctx->decode_q, &rd->decode_ent);
+     return 0;
+diff --git a/libavcodec/v4l2_request_hevc.c b/libavcodec/v4l2_request_hevc.c
+index 5b37319d6aa9..95d78e2f1376 100644
+--- a/libavcodec/v4l2_request_hevc.c
++++ b/libavcodec/v4l2_request_hevc.c
+@@ -124,12 +124,14 @@ static int dst_fmt_accept_cb(void * v, const struct v4l2_fmtdesc *fmtdesc)
+ 
+     if (h->ps.sps->bit_depth == 8) {
+         if (fmtdesc->pixelformat == V4L2_PIX_FMT_NV12_COL128 ||
++            fmtdesc->pixelformat == V4L2_PIX_FMT_NV12_COL128M ||
+             fmtdesc->pixelformat == V4L2_PIX_FMT_NV12) {
+             return 1;
+         }
+     }
+     else if (h->ps.sps->bit_depth == 10) {
+-        if (fmtdesc->pixelformat == V4L2_PIX_FMT_NV12_10_COL128) {
++        if (fmtdesc->pixelformat == V4L2_PIX_FMT_NV12_10_COL128 ||
++            fmtdesc->pixelformat == V4L2_PIX_FMT_NV12_10_COL128M) {
+             return 1;
+         }
+     }
+diff --git a/libavcodec/v4l2_request_hevc.h b/libavcodec/v4l2_request_hevc.h
+index 99c90064eab8..d673c73c9d1e 100644
+--- a/libavcodec/v4l2_request_hevc.h
++++ b/libavcodec/v4l2_request_hevc.h
+@@ -27,6 +27,13 @@
+ #define DRM_FORMAT_NV20 fourcc_code('N', 'V', '2', '0')
+ #endif
+ 
++#ifndef V4L2_PIX_FMT_NV12_COL128M
++#define V4L2_PIX_FMT_NV12_COL128M v4l2_fourcc('N', 'c', '1', '2') /* 12  Y/CbCr 4:2:0 128 pixel wide column */
++#define V4L2_PIX_FMT_NV12_10_COL128M v4l2_fourcc('N', 'c', '3', '0')
++								/* Y/CbCr 4:2:0 10bpc, 3x10 packed as 4 bytes in
++								 * a 128 bytes / 96 pixel wide column */
++#endif
++
+ #include <linux/videodev2.h>
+ #ifndef V4L2_CID_CODEC_BASE
+ #define V4L2_CID_CODEC_BASE V4L2_CID_MPEG_BASE
+
+From b335eb7b483f60159e2971f2eba175aa68e6fb92 Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Thu, 21 Nov 2024 18:15:36 +0000
+Subject: [PATCH 190/205] sand: Round new-style stride2 up to 8
+
+---
+ libavutil/rpi_sand_fns.h | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/libavutil/rpi_sand_fns.h b/libavutil/rpi_sand_fns.h
+index be4fb0f60734..b886dc1bd40c 100644
+--- a/libavutil/rpi_sand_fns.h
++++ b/libavutil/rpi_sand_fns.h
+@@ -115,14 +115,16 @@ static inline unsigned int av_rpi_sand_frame_stride1(const AVFrame * const frame
+ 
+ static inline unsigned int av_rpi_sand_frame_stride2_y(const AVFrame * const frame)
+ {
++    unsigned int s2 = (frame->height + 7) & ~7;
+     return frame->linesize[3] > 1 ? frame->linesize[3] :
+-        frame->linesize[3] == 0 ? frame->height : frame->height * 3 / 2;
++        frame->linesize[3] == 0 ? s2 : s2 * 3 / 2;
+ }
+ 
+ static inline unsigned int av_rpi_sand_frame_stride2_c(const AVFrame * const frame)
+ {
++    unsigned int s2 = (frame->height + 7) & ~7;
+     return frame->linesize[3] > 1 ? frame->linesize[3] :
+-        frame->linesize[3] == 0 ? frame->height / 2 : frame->height * 3 / 2;
++        frame->linesize[3] == 0 ? s2 / 2 : s2 * 3 / 2;
+ }
+ 
+ static inline int av_rpi_is_sand_format(const int format)
+
+From 63554201d084a780fc13cd8f86f19ede61fdfa74 Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Mon, 25 Nov 2024 19:14:13 +0000
+Subject: [PATCH 191/205] v4l2_request: Set frame height/width to coded values
+ on alloc
+
+Calling code in in the main hevc decoder will then set cropping on it.
+This is what would happen if we were using the default allocator
+---
+ libavcodec/v4l2_req_hevc_vx.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/libavcodec/v4l2_req_hevc_vx.c b/libavcodec/v4l2_req_hevc_vx.c
+index 4e19976270e8..6553e6419513 100644
+--- a/libavcodec/v4l2_req_hevc_vx.c
++++ b/libavcodec/v4l2_req_hevc_vx.c
+@@ -1351,6 +1351,10 @@ static int alloc_frame(AVCodecContext * avctx, AVFrame *frame)
+     frame->data[0] = frame->buf[0]->data;
+ 
+     frame->hw_frames_ctx = av_buffer_ref(avctx->hw_frames_ctx);
++    // Cropping will be applied by hevc_refs.c:ff_hevc_set_new_ref
++    // Mirrors hwaccel path in avcodec_default_get_buffer2
++    frame->width = avctx->coded_width;
++    frame->height = avctx->coded_height;
+ 
+     if ((rv = ff_attach_decode_data(frame)) != 0) {
+         av_log(avctx, AV_LOG_ERROR, "Failed to attach decode data to frame\n");
+
+From 96d404a000a4f9a59c242408c0d8c3c323cee5fe Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Mon, 25 Nov 2024 19:17:11 +0000
+Subject: [PATCH 192/205] frame: Avoid any cropping if drmprime and sand might
+ be fmt
+
+Latest definiotion of sand in drmprime regires height to remain
+unchanged in order to get the correct verical stride. By default ffmpeg
+thinks that it can simply be changed. Stop that. Calling code should
+respect the crop.
+---
+ libavutil/frame.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/libavutil/frame.c b/libavutil/frame.c
+index 48621e40989f..94678fe3b275 100644
+--- a/libavutil/frame.c
++++ b/libavutil/frame.c
+@@ -881,7 +881,8 @@ int av_frame_apply_cropping(AVFrame *frame, int flags)
+ 
+ #if CONFIG_SAND
+     // Sand cannot be cropped - do not try
+-    if (av_rpi_is_sand_format(frame->format))
++    // If it might be encapsulated in DRM_PRIME don't crop that either
++    if (av_rpi_is_sand_format(frame->format) || frame->format == AV_PIX_FMT_DRM_PRIME)
+         return 0;
+ #endif
+ 
+
+From e2e2406c6d0bc077d74089d25670808860b2646e Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Thu, 16 Jan 2025 17:09:50 +0000
+Subject: [PATCH 193/205] v4l2_req: Relax device checks based on new
+ understanding
+
+---
+ libavcodec/v4l2_req_devscan.c |  3 +--
+ libavcodec/v4l2_req_hevc_vx.c | 17 +----------------
+ 2 files changed, 2 insertions(+), 18 deletions(-)
+
+diff --git a/libavcodec/v4l2_req_devscan.c b/libavcodec/v4l2_req_devscan.c
+index ee8527ba1f35..6969fd40185d 100644
+--- a/libavcodec/v4l2_req_devscan.c
++++ b/libavcodec/v4l2_req_devscan.c
+@@ -136,9 +136,8 @@ void devscan_delete(struct devscan **const pScan)
+ }
+ 
+ #define REQ_BUF_CAPS (\
+-    V4L2_BUF_CAP_SUPPORTS_DMABUF |\
+     V4L2_BUF_CAP_SUPPORTS_REQUESTS |\
+-    V4L2_BUF_CAP_SUPPORTS_M2M_HOLD_CAPTURE_BUF)
++    0)
+ 
+ static void probe_formats(void * const dc,
+               struct devscan *const scan,
+diff --git a/libavcodec/v4l2_req_hevc_vx.c b/libavcodec/v4l2_req_hevc_vx.c
+index 6553e6419513..d1c371aa8bae 100644
+--- a/libavcodec/v4l2_req_hevc_vx.c
++++ b/libavcodec/v4l2_req_hevc_vx.c
+@@ -903,17 +903,6 @@ static int v4l2_request_hevc_decode_slice(AVCodecContext *avctx, const uint8_t *
+         }
+     }
+ 
+-    if (ctx->decode_mode == V4L2_STATELESS_HEVC_DECODE_MODE_FRAME_BASED) {
+-        if (rd->slices == NULL) {
+-            if ((rd->slices = av_mallocz(sizeof(*rd->slices))) == NULL)
+-                return AVERROR(ENOMEM);
+-            rd->slices->ptr = buffer;
+-            rd->num_slices = 1;
+-        }
+-        rd->slices->len = buffer - rd->slices->ptr + size;
+-        return 0;
+-    }
+-
+     if ((rv = slice_add(rd)) != 0)
+         return rv;
+ 
+@@ -1141,11 +1130,7 @@ probe(AVCodecContext * const avctx, V4L2RequestContextHEVC * const ctx)
+ 
+     mediabufs_ctl_query_ext_ctrls(ctx->mbufs, qc, noof_ctrls);
+     i = 0;
+-#if HEVC_CTRLS_VERSION >= 4
+-    // Skip slice check if no slice mode
+-    if (qc[1].type != 0 && !ctrl_valid(qc + 1, V4L2_STATELESS_HEVC_DECODE_MODE_SLICE_BASED))
+-        i = 1;
+-#else
++#if HEVC_CTRLS_VERSION < 4
+     // Fail frame mode silently for anything prior to V4
+     if (qc[1].type == 0 || !ctrl_valid(qc + 1, V4L2_STATELESS_HEVC_DECODE_MODE_SLICE_BASED))
+         return AVERROR(EINVAL);
+
+From 045fd450483e17119f4941f03f6227df0f4380a6 Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Mon, 6 Jan 2025 19:15:40 +0000
+Subject: [PATCH 194/205] hwcontext_drm: Fix sand cropping
+
+Fix cropping set on output to be source cropping. Previous code set it
+to zero as it always expected an overwite by an outside layer and
+therefore needed to convert with zero crop. Now restores src crop for
+code that doesn't stamp on it!
+---
+ libavutil/hwcontext_drm.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/libavutil/hwcontext_drm.c b/libavutil/hwcontext_drm.c
+index 137a952d2c3c..d3845b1db6e0 100644
+--- a/libavutil/hwcontext_drm.c
++++ b/libavutil/hwcontext_drm.c
+@@ -298,6 +298,10 @@ static int drm_transfer_data_from(AVHWFramesContext *hwfc,
+         // overwrites any crop that we create with the old values
+         const unsigned int w = FFMIN(dst->width, map->width);
+         const unsigned int h = FFMIN(dst->height, map->height);
++        const size_t ct = map->crop_top;
++        const size_t cb = map->crop_bottom;
++        const size_t cl = map->crop_left;
++        const size_t cr = map->crop_right;
+ 
+         map->crop_top = 0;
+         map->crop_bottom = 0;
+@@ -313,6 +317,10 @@ static int drm_transfer_data_from(AVHWFramesContext *hwfc,
+ 
+         dst->width = w;
+         dst->height = h;
++        dst->crop_top = ct;
++        dst->crop_bottom = cb;
++        dst->crop_left = cl;
++        dst->crop_right = cr;
+     }
+     else
+ #endif
+
+From fbfa23444f987f8ff32b387740e6649191359d80 Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Mon, 3 Feb 2025 14:48:55 +0000
+Subject: [PATCH 195/205] v4l2_req_media: Improve ctrl function prototypes
+
+---
+ libavcodec/v4l2_req_media.c | 4 ++--
+ libavcodec/v4l2_req_media.h | 9 +++++++--
+ 2 files changed, 9 insertions(+), 4 deletions(-)
+
+diff --git a/libavcodec/v4l2_req_media.c b/libavcodec/v4l2_req_media.c
+index c94cc5b0f684..2d3fb56ee68e 100644
+--- a/libavcodec/v4l2_req_media.c
++++ b/libavcodec/v4l2_req_media.c
+@@ -1567,7 +1567,7 @@ MediaBufsStatus mediabufs_stream_off(struct mediabufs_ctl *const mbc)
+     return status;
+ }
+ 
+-int mediabufs_ctl_set_ext_ctrls(struct mediabufs_ctl * mbc, struct media_request * const mreq, struct v4l2_ext_control control_array[], unsigned int n)
++int mediabufs_ctl_set_ext_ctrls(struct mediabufs_ctl * mbc, struct media_request * const mreq, struct v4l2_ext_control * const control_array, unsigned int n)
+ {
+     struct v4l2_ext_controls controls = {
+         .controls = control_array,
+@@ -1619,7 +1619,7 @@ MediaBufsStatus mediabufs_src_fmt_set(struct mediabufs_ctl *const mbc,
+     return rv;
+ }
+ 
+-int mediabufs_ctl_query_ext_ctrls(struct mediabufs_ctl * mbc, struct v4l2_query_ext_ctrl ctrls[], unsigned int n)
++int mediabufs_ctl_query_ext_ctrls(struct mediabufs_ctl * mbc, struct v4l2_query_ext_ctrl * ctrls, unsigned int n)
+ {
+     int rv = 0;
+     while (n--) {
+diff --git a/libavcodec/v4l2_req_media.h b/libavcodec/v4l2_req_media.h
+index 890947b2e210..84ef6bcf958c 100644
+--- a/libavcodec/v4l2_req_media.h
++++ b/libavcodec/v4l2_req_media.h
+@@ -71,6 +71,11 @@ struct qent_dst;
+ struct dmabuf_h;
+ struct dmabufs_ctl;
+ 
++struct timeval;
++enum v4l2_buf_type;
++struct v4l2_ext_control;
++struct v4l2_query_ext_ctrl;
++
+ // 1-1 mammping to V4L2 type - just defined separetely to avoid some include versioning difficulties
+ enum mediabufs_memory {
+    MEDIABUFS_MEMORY_UNSET            = 0,
+@@ -135,12 +140,12 @@ struct qent_src *mediabufs_src_qent_get(struct mediabufs_ctl *const mbc);
+ void mediabufs_src_qent_abort(struct mediabufs_ctl *const mbc, struct qent_src **const pqe_src);
+ 
+ int mediabufs_ctl_set_ext_ctrls(struct mediabufs_ctl * mbc, struct media_request * const mreq,
+-                                struct v4l2_ext_control control_array[], unsigned int n);
++                                struct v4l2_ext_control * const control_array, unsigned int n);
+ MediaBufsStatus mediabufs_set_ext_ctrl(struct mediabufs_ctl *const mbc,
+                 struct media_request * const mreq,
+                 unsigned int id, void *data,
+                 unsigned int size);
+-int mediabufs_ctl_query_ext_ctrls(struct mediabufs_ctl * mbc, struct v4l2_query_ext_ctrl ctrls[], unsigned int n);
++int mediabufs_ctl_query_ext_ctrls(struct mediabufs_ctl * mbc, struct v4l2_query_ext_ctrl * ctrls, unsigned int n);
+ 
+ int mediabufs_src_resizable(const struct mediabufs_ctl *const mbc);
+ 
+
+From 8c6da52925e3ccabe540b825d7ba90f6c4c5fe9b Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Mon, 6 Jan 2025 19:20:38 +0000
+Subject: [PATCH 196/205] v4l2_req_media: Revert to allowing var size src
+ buffers if possible
+
+---
+ libavcodec/v4l2_req_media.c | 4 ----
+ 1 file changed, 4 deletions(-)
+
+diff --git a/libavcodec/v4l2_req_media.c b/libavcodec/v4l2_req_media.c
+index 2d3fb56ee68e..da97ad5d056f 100644
+--- a/libavcodec/v4l2_req_media.c
++++ b/libavcodec/v4l2_req_media.c
+@@ -1640,13 +1640,9 @@ int mediabufs_ctl_query_ext_ctrls(struct mediabufs_ctl * mbc, struct v4l2_query_
+ 
+ int mediabufs_src_resizable(const struct mediabufs_ctl *const mbc)
+ {
+-#if 1
+-    return 0;
+-#else
+     // Single planar OUTPUT can only take exact size buffers
+     // Multiplanar will take larger than negotiated
+     return V4L2_TYPE_IS_MULTIPLANAR(mbc->src_fmt.type);
+-#endif
+ }
+ 
+ static void mediabufs_ctl_delete(struct mediabufs_ctl *const mbc)
+
+From a7fbf68a726557836f7b421fd6fc496ee8a88db2 Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Mon, 6 Jan 2025 19:21:14 +0000
+Subject: [PATCH 197/205] v4l2_req_media: On V4L2 slot exhaustion block rather
+ than fail
+
+If we run out of V4L2 slots due to to many buffers being alloced block
+and wait for some to return rather than error. This fixes ffmpeg
+copmmand line cases where output is slow compared to decode and we run
+out of buffers and fail.
+---
+ libavcodec/v4l2_req_media.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/libavcodec/v4l2_req_media.c b/libavcodec/v4l2_req_media.c
+index da97ad5d056f..8f019214431c 100644
+--- a/libavcodec/v4l2_req_media.c
++++ b/libavcodec/v4l2_req_media.c
+@@ -1285,7 +1285,9 @@ struct qent_dst* mediabufs_dst_qent_alloc(struct mediabufs_ctl *const mbc, struc
+ 
+             if (create_dst_bufs(mbc, 1, &be_dst) != 1) {
+                 qe_dst_free(be_dst);
+-                return NULL;
++                // We can't extend any more - try again but wait
++                mbc->dst_fixed = true;
++                return mediabufs_dst_qent_alloc(mbc, dbsc);
+             }
+         }
+     }
+
+From 5611a94613f4c263a252627dfe5071584b404b37 Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Thu, 13 Feb 2025 18:14:45 +0000
+Subject: [PATCH 198/205] v4l2_req_media: Reduce log level of buffer realloc
+ debug
+
+---
+ libavcodec/v4l2_req_media.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/libavcodec/v4l2_req_media.c b/libavcodec/v4l2_req_media.c
+index 8f019214431c..79dffa2ff97d 100644
+--- a/libavcodec/v4l2_req_media.c
++++ b/libavcodec/v4l2_req_media.c
+@@ -823,7 +823,7 @@ static int qent_base_realloc(struct qent_base *const be, const size_t len, struc
+ {
+     if (!be->dh[0] || len > dmabuf_size(be->dh[0])) {
+         size_t newsize = round_up_size(len);
+-        request_log("%s: Overrun %zd > %zd; trying %zd\n", __func__, len, dmabuf_size(be->dh[0]), newsize);
++        request_debug(NULL, "%s: Overrun %zd > %zd; trying %zd\n", __func__, len, dmabuf_size(be->dh[0]), newsize);
+         if (!dbsc) {
+             request_log("%s: No dmbabuf_ctrl for realloc\n", __func__);
+             return -ENOMEM;
+
+From 25220ad0651c7d5118d656b5e283a3489b46e526 Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Mon, 6 Jan 2025 19:25:15 +0000
+Subject: [PATCH 199/205] conformenc: Add an output mux for conformance testing
+
+Add a mux that automagically selects the correct YUV type for
+conformance testing and creates an MD5 or YUV file from any input. This
+fixes problems where conformance streams change pix fmt midway making
+it impossible to create a command line with the correct conversions.
+---
+ libavformat/Makefile     |   1 +
+ libavformat/allformats.c |   1 +
+ libavformat/conformenc.c | 257 +++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 259 insertions(+)
+ create mode 100644 libavformat/conformenc.c
+
+diff --git a/libavformat/Makefile b/libavformat/Makefile
+index 47bbbbfb2a90..ba7334dc08ca 100644
+--- a/libavformat/Makefile
++++ b/libavformat/Makefile
+@@ -164,6 +164,7 @@ OBJS-$(CONFIG_CODEC2_MUXER)              += codec2.o rawenc.o
+ OBJS-$(CONFIG_CODEC2RAW_DEMUXER)         += codec2.o pcm.o
+ OBJS-$(CONFIG_CODEC2RAW_MUXER)           += rawenc.o
+ OBJS-$(CONFIG_CONCAT_DEMUXER)            += concatdec.o
++OBJS-$(CONFIG_CONFORM_MUXER)             += conformenc.o
+ OBJS-$(CONFIG_CRC_MUXER)                 += crcenc.o
+ OBJS-$(CONFIG_DATA_DEMUXER)              += rawdec.o
+ OBJS-$(CONFIG_DATA_MUXER)                += rawenc.o
+diff --git a/libavformat/allformats.c b/libavformat/allformats.c
+index cb5b69e9cd6c..ecd806592458 100644
+--- a/libavformat/allformats.c
++++ b/libavformat/allformats.c
+@@ -122,6 +122,7 @@ extern const AVInputFormat  ff_codec2raw_demuxer;
+ extern const FFOutputFormat ff_codec2raw_muxer;
+ extern const AVInputFormat  ff_concat_demuxer;
+ extern const FFOutputFormat ff_crc_muxer;
++extern const FFOutputFormat ff_conform_muxer;
+ extern const AVInputFormat  ff_dash_demuxer;
+ extern const FFOutputFormat ff_dash_muxer;
+ extern const AVInputFormat  ff_data_demuxer;
+diff --git a/libavformat/conformenc.c b/libavformat/conformenc.c
+new file mode 100644
+index 000000000000..e1796f846ea6
+--- /dev/null
++++ b/libavformat/conformenc.c
+@@ -0,0 +1,257 @@
++/*
++ * Copyright (c) 2020 John Cox for Raspberry Pi Trading
++ *
++ * This file is part of FFmpeg.
++ *
++ * FFmpeg is free software; you can redistribute it and/or
++ * modify it under the terms of the GNU Lesser General Public
++ * License as published by the Free Software Foundation; either
++ * version 2.1 of the License, or (at your option) any later version.
++ *
++ * FFmpeg is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++ * Lesser General Public License for more details.
++ *
++ * You should have received a copy of the GNU Lesser General Public
++ * License along with FFmpeg; if not, write to the Free Software
++ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
++ */
++
++
++// *** This module is a work in progress and its utility is strictly
++//     limited to testing.
++
++#include "libavutil/opt.h"
++#include "libavutil/frame.h"
++#include "libavutil/md5.h"
++#include "libavutil/mem.h"
++#include "libavutil/pixdesc.h"
++#include "libavutil/hwcontext.h"
++#include "libavutil/hwcontext_drm.h"
++#include "mux.h"
++
++#include "pthread.h"
++#include <semaphore.h>
++#include <unistd.h>
++
++#define TRACE_ALL 1
++
++#define DRM_MODULE "vc4"
++
++// Aux size should only need to be 2, but on a few streams (Hobbit) under FKMS
++// we get initial flicker probably due to dodgy drm timing
++#define AUX_SIZE 3
++typedef struct conform_display_env_s
++{
++    AVClass *class;
++
++    void * line_buf;
++    size_t line_size;
++
++    struct AVMD5 * md5;
++
++    int conform_file;
++
++    unsigned long long foffset;
++    unsigned int fno;
++} conform_display_env_t;
++
++
++static int conform_vout_write_trailer(AVFormatContext *s)
++{
++    conform_display_env_t * const de = s->priv_data;
++
++#if TRACE_ALL
++    av_log(s, AV_LOG_DEBUG, "%s\n", __func__);
++#endif
++
++    if (de->md5) {
++        uint8_t m[16];
++        av_md5_final(de->md5, m);
++        avio_printf(s->pb, "MD5=%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x\n",
++                    m[0], m[1], m[2], m[3], m[4], m[5], m[6], m[7], m[8], m[9], m[10], m[11], m[12], m[13], m[14], m[15]);
++    }
++
++    return 0;
++}
++
++static int conform_vout_write_header(AVFormatContext *s)
++{
++    conform_display_env_t * const de = s->priv_data;
++
++#if TRACE_ALL
++    av_log(s, AV_LOG_DEBUG, "%s\n", __func__);
++#endif
++
++    if (de->md5)
++        av_md5_init(de->md5);
++    de->fno = 1;
++    de->foffset = 0;
++
++    return 0;
++}
++
++static int conform_vout_write_packet(AVFormatContext *s, AVPacket *pkt)
++{
++    const AVFrame * const sf = (AVFrame *)pkt->data;
++    AVFrame * cf = NULL;
++    const AVFrame * f = sf;
++
++    conform_display_env_t * const de = s->priv_data;
++    const AVPixFmtDescriptor * pix_desc = av_pix_fmt_desc_get(sf->format);
++    int is_hw = (pix_desc->flags & AV_PIX_FMT_FLAG_HWACCEL) != 0;
++    enum AVPixelFormat fmt = is_hw ? AV_PIX_FMT_NONE : sf->format;
++    unsigned int i;
++
++    if (is_hw) {
++        enum AVPixelFormat *xfmts = NULL;
++        av_hwframe_transfer_get_formats(sf->hw_frames_ctx, AV_HWFRAME_TRANSFER_DIRECTION_FROM, &xfmts, 0);
++        fmt = *xfmts;
++        av_free(xfmts);
++    }
++
++    av_log(s, AV_LOG_DEBUG, "%s: Frame %3d: %#08llx %dx%d crop(ltrb) %zd,%zd,%zd,%zd fmt %s -> %s\n", __func__,
++           de->fno, de->foffset,
++           sf->width, sf->height, sf->crop_left, sf->crop_top, sf->crop_right, sf->crop_bottom,
++           av_get_pix_fmt_name(sf->format), av_get_pix_fmt_name(fmt));
++    av_log(s, AV_LOG_DEBUG, "%s: Data ref count=%d, data=%p\n", __func__, av_buffer_get_ref_count(sf->buf[0]), sf->data[0]);
++
++    if ((sf->flags & AV_FRAME_FLAG_CORRUPT) != 0) {
++        av_log(s, AV_LOG_WARNING, "Discard corrupt frame: fmt=%d, ts=%" PRId64 "\n", sf->format, sf->pts);
++        return 0;
++    }
++
++    if (!is_hw)
++        f = sf;
++    else
++    {
++        cf = av_frame_alloc();
++        cf->format = fmt;
++        av_hwframe_transfer_data(cf, sf, AV_HWFRAME_TRANSFER_DIRECTION_FROM);
++        pix_desc = av_pix_fmt_desc_get(cf->format);
++        f = cf;
++    }
++
++    // This is fully generic - much optimisation possible
++    for (i = 0; i != pix_desc->nb_components; ++i) {
++        const AVComponentDescriptor * const cd = pix_desc->comp + i;
++        const unsigned int srw = ((i == 1 || i == 2) ? pix_desc->log2_chroma_w : 0);
++        const unsigned int rndw = (1 << srw) - 1;
++        const unsigned int srh = ((i == 1 || i == 2) ? pix_desc->log2_chroma_h : 0);
++        const unsigned int rndh = (1 << srh) - 1;
++        const unsigned int srp = cd->shift;
++        const unsigned int bpp = cd->depth > 8 ? 2 : 1;
++        const unsigned int h = (f->height - (f->crop_top + f->crop_bottom) + rndh) >> srh;
++        unsigned int y;
++        av_log(s, AV_LOG_DEBUG, "[%d] srp=%d\n", i, srp);
++        for (y = 0; y < h; ++y) {
++            const void *const lstart = f->data[cd->plane] + (y + (f->crop_top >> srh)) * f->linesize[cd->plane] + cd->offset + (f->crop_left >> srw) * cd->step;
++            const unsigned int w = (f->width - (f->crop_left + f->crop_right) + rndw) >> srw;
++            unsigned int x;
++            if (bpp == 1) {
++                uint8_t *d = de->line_buf;
++                const uint8_t *s = lstart;
++                for (x = 0; x != w; ++x) {
++                    *d++ = *s >> srp;
++                    s += cd->step;
++                }
++            }
++            else {
++                uint16_t *d = de->line_buf;
++                const uint8_t *s = lstart;
++                for (x = 0; x != w; ++x) {
++                    *d++ = *(uint16_t*)s >> srp;
++                    s += cd->step;
++                }
++            }
++
++            // We have one line
++
++            if (de->md5)
++                av_md5_update(de->md5, de->line_buf, w * bpp);
++            else {
++                avio_write(s->pb, de->line_buf, w * bpp);
++                de->foffset += w * bpp;
++            }
++        }
++    }
++    ++de->fno;
++
++    av_log(s, AV_LOG_DEBUG, "%s: Done: Data ref count=%d\n", __func__, av_buffer_get_ref_count(sf->buf[0]));
++
++    av_frame_free(&cf);
++
++    return 0;
++}
++
++static int conform_vout_write_frame(AVFormatContext *s, int stream_index, AVFrame **ppframe,
++                          unsigned flags)
++{
++    av_log(s, AV_LOG_ERROR, "%s: NIF: idx=%d, flags=%#x\n", __func__, stream_index, flags);
++    return AVERROR_PATCHWELCOME;
++}
++
++// deinit is called if init fails so no need to clean up explicity here
++static int conform_vout_init(struct AVFormatContext * s)
++{
++    conform_display_env_t * const de = s->priv_data;
++
++    av_log(s, AV_LOG_DEBUG, "<<< %s\n", __func__);
++
++    de->line_size = (8192 * 4); // 4bpp * 8k seems plenty
++    de->line_buf = av_malloc(de->line_size);
++
++    if (!de->conform_file)
++        de->md5 = av_md5_alloc();
++
++    av_log(s, AV_LOG_DEBUG, ">>> %s\n", __func__);
++
++    return 0;
++}
++
++static void conform_vout_deinit(struct AVFormatContext * s)
++{
++    conform_display_env_t * const de = s->priv_data;
++
++    av_log(s, AV_LOG_DEBUG, "<<< %s\n", __func__);
++
++    av_freep(&de->line_buf);
++    av_freep(&de->md5);
++
++    av_log(s, AV_LOG_DEBUG, ">>> %s\n", __func__);
++}
++
++
++#define OFFSET(x) offsetof(conform_display_env_t, x)
++static const AVOption options[] = {
++    { "conform_yuv", "Output yuv file rather than md5", OFFSET(conform_file), AV_OPT_TYPE_BOOL, { .i64 = 0 }, 0, 1, AV_OPT_FLAG_ENCODING_PARAM },
++    { NULL }
++};
++
++static const AVClass conform_vid_class = {
++    .class_name = "conform vid muxer",
++    .item_name  = av_default_item_name,
++    .option     = options,
++    .version    = LIBAVUTIL_VERSION_INT,
++    .category   = AV_CLASS_CATEGORY_DEVICE_VIDEO_OUTPUT,
++};
++
++const FFOutputFormat ff_conform_muxer = {
++    .p = {
++        .name           = "conform",
++        .long_name      = NULL_IF_CONFIG_SMALL("Video out conformance test helper"),
++        .audio_codec    = AV_CODEC_ID_NONE,
++        .video_codec    = AV_CODEC_ID_WRAPPED_AVFRAME,
++        .flags          = AVFMT_VARIABLE_FPS | AVFMT_NOTIMESTAMPS,
++        .priv_class     = &conform_vid_class,
++    },
++    .priv_data_size = sizeof(conform_display_env_t),
++    .write_header   = conform_vout_write_header,
++    .write_packet   = conform_vout_write_packet,
++    .write_uncoded_frame = conform_vout_write_frame,
++    .write_trailer  = conform_vout_write_trailer,
++    .init           = conform_vout_init,
++    .deinit         = conform_vout_deinit,
++};
++
+
+From 489aef8569faf317e70ca738611141287d4b8cd7 Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Fri, 7 Feb 2025 17:11:45 +0000
+Subject: [PATCH 200/205] pi-util/ffconf: Use new conform mux rather than md5
+
+---
+ pi-util/ffconf.py | 61 ++++++++++++++++++++++-------------------------
+ 1 file changed, 28 insertions(+), 33 deletions(-)
+
+diff --git a/pi-util/ffconf.py b/pi-util/ffconf.py
+index 391670fd446d..02af4583aeea 100755
+--- a/pi-util/ffconf.py
++++ b/pi-util/ffconf.py
+@@ -9,10 +9,15 @@ import sys
+ import csv
+ from stat import *
+ 
+-CODEC_HEVC_RPI  = 1
+-HWACCEL_RPI     = 2
+-HWACCEL_DRM     = 3
+-HWACCEL_VAAPI   = 4
++class DecodeType:
++    def __init__(self, textname, hwaccel):
++        self.textname = textname
++        self.hwaccel = hwaccel
++
++hwaccel_rpi = DecodeType("RPI Test/Legacy", "rpi")
++hwaccel_sw = DecodeType("Software", None)
++hwaccel_drm = DecodeType("DRM Prime", "drm")
++hwaccel_vaapi = DecodeType("VAAPI", "vaapi")
+ 
+ def testone(fileroot, srcname, es_file, md5_file, pix, dectype, vcodec, args):
+     ffmpeg_exec = args.ffmpeg
+@@ -20,22 +25,6 @@ def testone(fileroot, srcname, es_file, md5_file, pix, dectype, vcodec, args):
+     valgrind = args.valgrind
+     rv = 0
+ 
+-    hwaccel = ""
+-    if dectype == HWACCEL_RPI:
+-        hwaccel = "rpi"
+-    elif dectype == HWACCEL_DRM:
+-        hwaccel = "drm"
+-    elif dectype == HWACCEL_VAAPI:
+-        hwaccel = "vaapi"
+-
+-    pix_fmt = []
+-    if pix == "8":
+-        pix_fmt = ["-pix_fmt", "yuv420p"]
+-    elif pix == "10":
+-        pix_fmt = ["-pix_fmt", "yuv420p10le"]
+-    elif pix == "12":
+-        pix_fmt = ["-pix_fmt", "yuv420p12le"]
+-
+     tmp_root = "/tmp"
+ 
+     names = srcname.split('/')
+@@ -62,10 +51,10 @@ def testone(fileroot, srcname, es_file, md5_file, pix, dectype, vcodec, args):
+     flog = open(os.path.join(tmp_root, name + ".log"), "w+t")
+ 
+     ffargs = [ffmpeg_exec, "-flags", "unaligned"] +\
+-        (["-hwaccel", hwaccel] if hwaccel else []) +\
++        ["-no_cvt_hw"] +\
++        (["-hwaccel", dectype.hwaccel] if dectype.hwaccel else []) +\
+         ["-vcodec", "hevc", "-i", os.path.join(fileroot, es_file)] +\
+-        pix_fmt +\
+-        ([yuv_file] if gen_yuv else ["-f", "md5", dec_file])
++        (["-conform_yuv", "1", "-f", "conform", yuv_file] if gen_yuv else ["-f", "conform", dec_file])
+ 
+     if valgrind:
+         ffargs = ['valgrind', '--leak-check=full'] + ffargs
+@@ -192,6 +181,8 @@ def doconf(csva, tests, test_root, vcodec, dectype, args):
+                 else :
+                     print(": * BANG *")
+ 
++    print()
++    print("Tested using decode type:", dectype.textname)
+     if unx_failures or unx_success:
+         print("Unexpected Failures:", unx_failures)
+         print("Unexpected Success: ", unx_success)
+@@ -210,6 +201,8 @@ class ConfCSVDialect(csv.Dialect):
+     skipinitialspace = True
+     strict = True
+ 
++
++
+ if __name__ == '__main__':
+ 
+     argp = argparse.ArgumentParser(description="FFmpeg h265 conformance tester")
+@@ -239,18 +232,20 @@ if __name__ == '__main__':
+     with open(args.csv, 'rt') as csvfile:
+         csva = [a for a in csv.reader(csvfile, ConfCSVDialect())]
+ 
+-    dectype = CODEC_HEVC_RPI
++    dectype = None
+     if os.path.exists("/dev/rpivid-hevcmem"):
+-        dectype = HWACCEL_RPI
++        dectype = hwaccel_rpi
+     if args.drm or os.path.exists("/sys/module/rpivid_hevc") or os.path.exists("/sys/module/rpi_hevc_dec"):
+-        dectype = HWACCEL_DRM
++        dectype = hwaccel_drm
+ 
+     if args.pi4:
+-        dectype = HWACCEL_RPI
++        dectype = hwaccel_rpi
+     elif args.drm:
+-        dectype = HWACCEL_DRM
++        dectype = hwaccel_drm
+     elif args.vaapi:
+-        dectype = HWACCEL_VAAPI
++        dectype = hwaccel_vaapi
++    elif args.sw:
++        dectype = hwaccel_sw
+ 
+     if os.path.isdir(args.ffmpeg):
+         args.ffmpeg = os.path.join(args.ffmpeg, "ffmpeg")
+@@ -258,10 +253,10 @@ if __name__ == '__main__':
+         print("FFmpeg file '%s' not found" % args.ffmpeg)
+         exit(1)
+ 
+-    if args.sw:
+-        dectype = None
+-    elif not dectype:
+-        print("WARNING: no h/w decode slected - using software")
++    if not dectype:
++        print("No decode type selected and no h/w detected")
++        exit(1)
++    print("Running test using decode:", dectype.textname)
+ 
+     i = 0
+     while True:
+
+From a8b37e79d7a9ac7469e7e93d7e4126b06c305d75 Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Mon, 17 Feb 2025 16:48:34 +0000
+Subject: [PATCH 201/205] conformenc: Remove unwanted debug
+
+---
+ libavformat/conformenc.c | 4 ----
+ 1 file changed, 4 deletions(-)
+
+diff --git a/libavformat/conformenc.c b/libavformat/conformenc.c
+index e1796f846ea6..2220bbf6d5f9 100644
+--- a/libavformat/conformenc.c
++++ b/libavformat/conformenc.c
+@@ -115,7 +115,6 @@ static int conform_vout_write_packet(AVFormatContext *s, AVPacket *pkt)
+            de->fno, de->foffset,
+            sf->width, sf->height, sf->crop_left, sf->crop_top, sf->crop_right, sf->crop_bottom,
+            av_get_pix_fmt_name(sf->format), av_get_pix_fmt_name(fmt));
+-    av_log(s, AV_LOG_DEBUG, "%s: Data ref count=%d, data=%p\n", __func__, av_buffer_get_ref_count(sf->buf[0]), sf->data[0]);
+ 
+     if ((sf->flags & AV_FRAME_FLAG_CORRUPT) != 0) {
+         av_log(s, AV_LOG_WARNING, "Discard corrupt frame: fmt=%d, ts=%" PRId64 "\n", sf->format, sf->pts);
+@@ -144,7 +143,6 @@ static int conform_vout_write_packet(AVFormatContext *s, AVPacket *pkt)
+         const unsigned int bpp = cd->depth > 8 ? 2 : 1;
+         const unsigned int h = (f->height - (f->crop_top + f->crop_bottom) + rndh) >> srh;
+         unsigned int y;
+-        av_log(s, AV_LOG_DEBUG, "[%d] srp=%d\n", i, srp);
+         for (y = 0; y < h; ++y) {
+             const void *const lstart = f->data[cd->plane] + (y + (f->crop_top >> srh)) * f->linesize[cd->plane] + cd->offset + (f->crop_left >> srw) * cd->step;
+             const unsigned int w = (f->width - (f->crop_left + f->crop_right) + rndw) >> srw;
+@@ -178,8 +176,6 @@ static int conform_vout_write_packet(AVFormatContext *s, AVPacket *pkt)
+     }
+     ++de->fno;
+ 
+-    av_log(s, AV_LOG_DEBUG, "%s: Done: Data ref count=%d\n", __func__, av_buffer_get_ref_count(sf->buf[0]));
+-
+     av_frame_free(&cf);
+ 
+     return 0;
+
+From ffeeaefac81142c30c08ab3f42077b60aaec9ab0 Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Mon, 17 Feb 2025 16:52:10 +0000
+Subject: [PATCH 202/205] hwcontext_drm: Remove pointless & from fn param
+
+---
+ libavutil/hwcontext_drm.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/libavutil/hwcontext_drm.c b/libavutil/hwcontext_drm.c
+index d3845b1db6e0..c531c73d95f5 100644
+--- a/libavutil/hwcontext_drm.c
++++ b/libavutil/hwcontext_drm.c
+@@ -215,7 +215,7 @@ static int drm_map_frame(AVHWFramesContext *hwfc,
+ #endif
+ 
+     err = ff_hwframe_map_create(src->hw_frames_ctx, dst, src,
+-                                &drm_unmap_frame, map);
++                                drm_unmap_frame, map);
+     if (err < 0)
+         goto fail;
+ 
+
+From d8240bc6795822633ee2cbc691327b21a9fbb19e Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Mon, 17 Feb 2025 16:53:04 +0000
+Subject: [PATCH 203/205] hwcontext_drm: use copy_props to inherit crop from
+ src
+
+---
+ libavutil/hwcontext_drm.c | 24 +++++++-----------------
+ 1 file changed, 7 insertions(+), 17 deletions(-)
+
+diff --git a/libavutil/hwcontext_drm.c b/libavutil/hwcontext_drm.c
+index c531c73d95f5..e212584c674c 100644
+--- a/libavutil/hwcontext_drm.c
++++ b/libavutil/hwcontext_drm.c
+@@ -196,10 +196,7 @@ static int drm_map_frame(AVHWFramesContext *hwfc,
+ 
+     dst->width  = src->width;
+     dst->height = src->height;
+-    dst->crop_top    = src->crop_top;
+-    dst->crop_bottom = src->crop_bottom;
+-    dst->crop_left   = src->crop_left;
+-    dst->crop_right  = src->crop_right;
++    // Crop copied with props
+ 
+ #if CONFIG_SAND
+     // Rework for sand frames
+@@ -219,6 +216,7 @@ static int drm_map_frame(AVHWFramesContext *hwfc,
+     if (err < 0)
+         goto fail;
+ 
++    av_frame_copy_props(dst, src);
+     return 0;
+ 
+ fail:
+@@ -294,14 +292,8 @@ static int drm_transfer_data_from(AVHWFramesContext *hwfc,
+ #endif
+ #if CONFIG_SAND
+     if (av_rpi_is_sand_frame(map)) {
+-        // Preserve crop - later ffmpeg code assumes that we have in that it
+-        // overwrites any crop that we create with the old values
+         const unsigned int w = FFMIN(dst->width, map->width);
+         const unsigned int h = FFMIN(dst->height, map->height);
+-        const size_t ct = map->crop_top;
+-        const size_t cb = map->crop_bottom;
+-        const size_t cl = map->crop_left;
+-        const size_t cr = map->crop_right;
+ 
+         map->crop_top = 0;
+         map->crop_bottom = 0;
+@@ -317,20 +309,18 @@ static int drm_transfer_data_from(AVHWFramesContext *hwfc,
+ 
+         dst->width = w;
+         dst->height = h;
+-        dst->crop_top = ct;
+-        dst->crop_bottom = cb;
+-        dst->crop_left = cl;
+-        dst->crop_right = cr;
++        // Cropping restored as part of props
+     }
+     else
+ #endif
+     {
+-        // Kludge mapped h/w s.t. frame_copy works
+-        map->width  = dst->width;
+-        map->height = dst->height;
++        dst->width  = map->width;
++        dst->height = map->height;
+         err = av_frame_copy(dst, map);
+     }
+ 
++    av_frame_copy_props(dst, src);
++
+     if (err)
+     {
+         av_log(hwfc, AV_LOG_ERROR, "%s: Copy fail\n", __func__);
+
+From a4f8d3f69e97de0a0005a06ad76063e0a52fd7f5 Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Fri, 28 Feb 2025 16:44:10 +0000
+Subject: [PATCH 204/205] v4l2_req_hevc: Fix up for latest sand scheme
+
+---
+ libavcodec/v4l2_req_hevc_vx.c |  8 +++++++-
+ libavutil/hwcontext_drm.c     | 11 +++++++++--
+ libavutil/rpi_sand_fns.h      |  8 ++------
+ 3 files changed, 18 insertions(+), 9 deletions(-)
+
+diff --git a/libavcodec/v4l2_req_hevc_vx.c b/libavcodec/v4l2_req_hevc_vx.c
+index d1c371aa8bae..b224fa338f3e 100644
+--- a/libavcodec/v4l2_req_hevc_vx.c
++++ b/libavcodec/v4l2_req_hevc_vx.c
+@@ -710,6 +710,7 @@ static int drm_from_format(AVDRMFrameDescriptor * const desc, const struct v4l2_
+     unsigned int width;
+     unsigned int height;
+     unsigned int bpl;
++    unsigned int bpl2;
+     uint32_t pixelformat;
+     uint64_t mod = DRM_FORMAT_MOD_LINEAR;
+     unsigned int object_count = 1;
+@@ -726,6 +727,7 @@ static int drm_from_format(AVDRMFrameDescriptor * const desc, const struct v4l2_
+         pixelformat = format->fmt.pix.pixelformat;
+         bpl         = format->fmt.pix.bytesperline;
+     }
++    bpl2 = bpl;
+ 
+     switch (pixelformat) {
+     case V4L2_PIX_FMT_NV12:
+@@ -743,11 +745,15 @@ static int drm_from_format(AVDRMFrameDescriptor * const desc, const struct v4l2_
+     case V4L2_PIX_FMT_NV12_COL128M:
+         layer->format = DRM_FORMAT_NV12;
+         mod = DRM_FORMAT_MOD_BROADCOM_SAND128_COL_HEIGHT(0);
++        bpl = height;
++        bpl2 = height / 2;
+         object_count = 2;
+         break;
+     case V4L2_PIX_FMT_NV12_10_COL128M:
+         layer->format = DRM_FORMAT_P030;
+         mod = DRM_FORMAT_MOD_BROADCOM_SAND128_COL_HEIGHT(0);
++        bpl = height;
++        bpl2 = height / 2;
+         object_count = 2;
+         break;
+ #endif
+@@ -805,7 +811,7 @@ static int drm_from_format(AVDRMFrameDescriptor * const desc, const struct v4l2_
+     {
+         layer->planes[1].object_index = (object_count > 1) ? 1 : 0;
+         layer->planes[1].offset = (object_count > 1) ? 0 : layer->planes[0].pitch * height;
+-        layer->planes[1].pitch = layer->planes[0].pitch;
++        layer->planes[1].pitch = bpl2;
+     }
+ 
+     return 0;
+diff --git a/libavutil/hwcontext_drm.c b/libavutil/hwcontext_drm.c
+index e212584c674c..49f4177c345c 100644
+--- a/libavutil/hwcontext_drm.c
++++ b/libavutil/hwcontext_drm.c
+@@ -204,10 +204,17 @@ static int drm_map_frame(AVHWFramesContext *hwfc,
+         // As it stands the sand formats hold stride2 in linesize[3]
+         // linesize[0] & [1] contain stride1 which is always 128 for everything we do
+         // * Arguably this should be reworked s.t. stride2 is in linesize[0] & [1]
+-        dst->linesize[3] = fourcc_mod_broadcom_param(desc->objects[0].format_modifier);
++        int mod_stride = fourcc_mod_broadcom_param(desc->objects[0].format_modifier);
++        if (mod_stride == 0) {
++            dst->linesize[3] = dst->linesize[0];
++            dst->linesize[4] = dst->linesize[1];
++        }
++        else {
++            dst->linesize[3] = mod_stride;
++            dst->linesize[4] = mod_stride;
++        }
+         dst->linesize[0] = 128;
+         dst->linesize[1] = 128;
+-        // *** Are we sure src->height is actually what we want ???
+     }
+ #endif
+ 
+diff --git a/libavutil/rpi_sand_fns.h b/libavutil/rpi_sand_fns.h
+index b886dc1bd40c..e0b18a366124 100644
+--- a/libavutil/rpi_sand_fns.h
++++ b/libavutil/rpi_sand_fns.h
+@@ -115,16 +115,12 @@ static inline unsigned int av_rpi_sand_frame_stride1(const AVFrame * const frame
+ 
+ static inline unsigned int av_rpi_sand_frame_stride2_y(const AVFrame * const frame)
+ {
+-    unsigned int s2 = (frame->height + 7) & ~7;
+-    return frame->linesize[3] > 1 ? frame->linesize[3] :
+-        frame->linesize[3] == 0 ? s2 : s2 * 3 / 2;
++    return frame->linesize[3];
+ }
+ 
+ static inline unsigned int av_rpi_sand_frame_stride2_c(const AVFrame * const frame)
+ {
+-    unsigned int s2 = (frame->height + 7) & ~7;
+-    return frame->linesize[3] > 1 ? frame->linesize[3] :
+-        frame->linesize[3] == 0 ? s2 / 2 : s2 * 3 / 2;
++    return frame->linesize[4];
+ }
+ 
+ static inline int av_rpi_is_sand_format(const int format)
+
+From fa6bc5dc62b4fb98f25701424e00cd17a8dabe6d Mon Sep 17 00:00:00 2001
+From: John Cox <jc@kynesim.co.uk>
+Date: Mon, 10 Mar 2025 15:59:06 +0000
+Subject: [PATCH 205/205] Revert "frame: Avoid any cropping if drmprime and
+ sand might be fmt"
+
+This reverts commit 96d404a000a4f9a59c242408c0d8c3c323cee5fe.
+---
+ libavutil/frame.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/libavutil/frame.c b/libavutil/frame.c
+index 94678fe3b275..48621e40989f 100644
+--- a/libavutil/frame.c
++++ b/libavutil/frame.c
+@@ -881,8 +881,7 @@ int av_frame_apply_cropping(AVFrame *frame, int flags)
+ 
+ #if CONFIG_SAND
+     // Sand cannot be cropped - do not try
+-    // If it might be encapsulated in DRM_PRIME don't crop that either
+-    if (av_rpi_is_sand_format(frame->format) || frame->format == AV_PIX_FMT_DRM_PRIME)
++    if (av_rpi_is_sand_format(frame->format))
+         return 0;
+ #endif
+ 
