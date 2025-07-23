@@ -3,12 +3,12 @@
 # Copyright (C) 2017-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="samba"
-PKG_VERSION="4.19.9"
-PKG_SHA256="71ed406444714c90bb9d36c576d807b67af15449f297e91106d42b3ca2fa5549"
+PKG_VERSION="4.22.3"
+PKG_SHA256="8fd7092629a3596d935cd7567d934979f94272918ec3affd0cc807934ecf22ba"
 PKG_LICENSE="GPLv3+"
 PKG_SITE="https://www.samba.org"
 PKG_URL="https://download.samba.org/pub/samba/stable/${PKG_NAME}-${PKG_VERSION}.tar.gz"
-PKG_DEPENDS_TARGET="toolchain attr heimdal:host e2fsprogs Python3 libunwind zlib readline popt libaio connman gnutls wsdd2"
+PKG_DEPENDS_TARGET="autotools:host gcc:host heimdal:host attr connman e2fsprogs gnutls libaio libunwind popt Python3 readline talloc wsdd2 zlib"
 PKG_NEED_UNPACK="$(get_pkg_directory heimdal) $(get_pkg_directory e2fsprogs)"
 PKG_LONGDESC="A free SMB / CIFS fileserver and client."
 
@@ -77,7 +77,7 @@ configure_package() {
   PKG_SAMBA_TARGET="smbclient,client/smbclient,smbtree,nmblookup,testparm"
 
   if [ "${SAMBA_SERVER}" = "yes" ]; then
-    PKG_SAMBA_TARGET+=",nmbd,rpcd_classic,rpcd_epmapper,rpcd_winreg,samba-dcerpcd,smbpasswd,smbd/smbd"
+    PKG_SAMBA_TARGET+=",nmbd,rpcd_classic,rpcd_epmapper,rpcd_winreg,samba-dcerpcd,smbpasswd,smbd/smbd,vfs_fruit,vfs_catia,vfs_streams_xattr"
   fi
 }
 
@@ -154,6 +154,10 @@ perform_manual_install() {
       cp -PR bin/default/source3/rpc_server/rpcd_classic ${INSTALL}/usr/libexec/samba
       cp -PR bin/default/source3/rpc_server/rpcd_epmapper ${INSTALL}/usr/libexec/samba
       cp -PR bin/default/source3/rpc_server/rpcd_winreg ${INSTALL}/usr/libexec/samba
+
+    mkdir -p ${INSTALL}/usr/lib/vfs
+      cp ${PKG_BUILD}/bin/modules/vfs/* ${INSTALL}/usr/lib/vfs/
+
   fi
 }
 
