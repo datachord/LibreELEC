@@ -3,8 +3,8 @@
 # Copyright (C) 2018-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="mesa"
-PKG_VERSION="25.0.7"
-PKG_SHA256="592272df3cf01e85e7db300c449df5061092574d099da275d19e97ef0510f8a6"
+PKG_VERSION="25.1.6"
+PKG_SHA256="9f2b69eb39d2d8717d30a9868fdda3e0c0d3708ba32778bbac8ddb044538ce84"
 PKG_LICENSE="OSS"
 PKG_SITE="http://www.mesa3d.org/"
 PKG_URL="https://mesa.freedesktop.org/archive/mesa-${PKG_VERSION}.tar.xz"
@@ -23,15 +23,14 @@ PKG_MESON_OPTS_HOST="-Dglvnd=disabled \
                      -Dgallium-vdpau=disabled \
                      -Dplatforms= \
                      -Dglx=disabled \
-                     -Dvulkan-drivers="
+                     -Dvulkan-drivers= \
+                     -Dshared-llvm=disabled \
+                     -Dtools=panfrost"
 
 PKG_MESON_OPTS_TARGET="-Dgallium-drivers=${GALLIUM_DRIVERS// /,} \
                        -Dgallium-extra-hud=false \
                        -Dgallium-rusticl=false \
-                       -Dgallium-nine=false \
-                       -Dgallium-opencl=disabled \
                        -Dshader-cache=enabled \
-                       -Dshared-glapi=enabled \
                        -Dopengl=true \
                        -Dgbm=enabled \
                        -Degl=enabled \
@@ -40,8 +39,7 @@ PKG_MESON_OPTS_TARGET="-Dgallium-drivers=${GALLIUM_DRIVERS// /,} \
                        -Dlmsensors=disabled \
                        -Dbuild-tests=false \
                        -Ddraw-use-llvm=false \
-                       -Dmicrosoft-clc=disabled \
-                       -Dosmesa=false"
+                       -Dmicrosoft-clc=disabled"
 
 if [ "${DISPLAYSERVER}" = "x11" ]; then
   PKG_DEPENDS_TARGET+=" xorgproto libXext libXdamage libXfixes libXxf86vm libxcb libX11 libxshmfence libXrandr"
@@ -61,12 +59,17 @@ if listcontains "${GRAPHIC_DRIVERS}" "etnaviv"; then
   PKG_DEPENDS_TARGET+=" pycparser:host"
 fi
 
-if listcontains "${GRAPHIC_DRIVERS}" "iris"; then
-  PKG_DEPENDS_TARGET+=" mesa:host"
-  PKG_MESON_OPTS_TARGET+=" -Dmesa-clc=system"
+if listcontains "${GRAPHIC_DRIVERS}" "(iris|panfrost)"; then
+  if [ "${USE_REUSABLE}" = "yes" ]; then
+    PKG_DEPENDS_TARGET+=" mesa-reusable"
+  else
+    PKG_DEPENDS_TARGET+=" mesa:host"
+  fi
+  PKG_MESON_OPTS_TARGET+=" -Dmesa-clc=system -Dprecomp-compiler=system"
 fi
 
-if listcontains "${GRAPHIC_DRIVERS}" "(nvidia|nvidia-ng)"; then
+if listcontains "${GRAPHIC_DRIVERS}" "(nvidia|nvidia-ng)" ||
+              [ "${OPENGL_SUPPORT}" = "yes" -a "${DISPLAYSERVER}" != "x11" ]; then
   PKG_DEPENDS_TARGET+=" libglvnd"
   PKG_MESON_OPTS_TARGET+=" -Dglvnd=enabled"
 else
@@ -108,14 +111,38 @@ else
 fi
 
 if [ "${VULKAN_SUPPORT}" = "yes" ]; then
-  PKG_DEPENDS_TARGET+=" ${VULKAN} vulkan-tools"
+  PKG_DEPENDS_TARGET+=" ${VULKAN} vulkan-tools ply:host"
   PKG_MESON_OPTS_TARGET+=" -Dvulkan-drivers=${VULKAN_DRIVERS_MESA// /,}"
 else
   PKG_MESON_OPTS_TARGET+=" -Dvulkan-drivers="
 fi
 
 makeinstall_host() {
+  host_files="src/compiler/clc/mesa_clc src/compiler/spirv/vtn_bindgen2 src/panfrost/clc/panfrost_compile"
+
+  if listcontains "${BUILD_REUSABLE}" "(all|mesa:host)"; then
+    # Build the reusable mesa:host for both local and to be added to a GitHub release
+    strip ${host_files}
+    upx --lzma ${host_files}
+
+    REUSABLE_SOURCES="${SOURCES}/mesa-reusable"
+    MESA_HOST="mesa-reusable-${OS_VERSION}-${PKG_VERSION}"
+    REUSABLE_SOURCE_NAME=${MESA_HOST}-${MACHINE_HARDWARE_NAME}.tar
+
+    mkdir -p "${TARGET_IMG}"
+
+    tar cf ${TARGET_IMG}/${REUSABLE_SOURCE_NAME} --transform='s|.*/||' ${host_files}
+    sha256sum ${TARGET_IMG}/${REUSABLE_SOURCE_NAME} | \
+      cut -d" " -f1 >${TARGET_IMG}/${REUSABLE_SOURCE_NAME}.sha256
+
+    if listcontains "${BUILD_REUSABLE}" "save-local"; then
+      mkdir -p "${REUSABLE_SOURCES}"
+      cp -p ${TARGET_IMG}/${REUSABLE_SOURCE_NAME} ${REUSABLE_SOURCES}
+      cp -p ${TARGET_IMG}/${REUSABLE_SOURCE_NAME}.sha256 ${REUSABLE_SOURCES}
+      echo "save-local" >${REUSABLE_SOURCES}/${REUSABLE_SOURCE_NAME}.url
+    fi
+  fi
+
   mkdir -p "${TOOLCHAIN}/bin"
-    cp -a src/compiler/clc/mesa_clc "${TOOLCHAIN}/bin"
-    cp -a src/compiler/spirv/vtn_bindgen "${TOOLCHAIN}/bin"
+    cp -a ${host_files} "${TOOLCHAIN}/bin"
 }
