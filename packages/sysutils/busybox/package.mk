@@ -130,10 +130,6 @@ makeinstall_target() {
     sed -e "s/@DISTRONAME@/${DISTRONAME}/g" \
         -i ${INSTALL}/usr/lib/libreelec/fs-resize
 
-    if listcontains "${FIRMWARE}" "rpi-eeprom"; then
-      cp ${PKG_DIR}/scripts/rpi-flash-firmware ${INSTALL}/usr/lib/libreelec
-    fi
-
   mkdir -p ${INSTALL}/usr/lib/systemd/system-generators/
     cp ${PKG_DIR}/scripts/libreelec-target-generator ${INSTALL}/usr/lib/systemd/system-generators/
 
@@ -172,7 +168,6 @@ post_install() {
   enable_service show-version.service
   enable_service var.mount
   enable_service locale.service
-  listcontains "${FIRMWARE}" "rpi-eeprom" && enable_service rpi-flash-firmware.service
 
   # cron support
   if [ "${CRON_SUPPORT}" = "yes" ]; then
