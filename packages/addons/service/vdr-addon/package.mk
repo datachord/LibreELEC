@@ -4,7 +4,7 @@
 # Copyright (C) 2017-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="vdr-addon"
-PKG_VERSION="2.7.1"
+PKG_VERSION="2.7.7"
 PKG_REV="0"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
