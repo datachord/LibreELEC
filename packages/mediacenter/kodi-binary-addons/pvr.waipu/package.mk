@@ -4,7 +4,7 @@
 PKG_NAME="pvr.waipu"
 PKG_VERSION="21.12.3-Omega"
 PKG_SHA256="d41276c6d4e628b145fc5d5cfd4699faf230b1b7b1aaf94f7f4dac56a365f384"
-PKG_REV="2"
+PKG_REV="3"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
 PKG_SITE="https://github.com/flubshi/pvr.waipu"
